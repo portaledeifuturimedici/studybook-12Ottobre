@@ -50,8 +50,13 @@
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --desk: #141a24; --desk-ink: #ece8df; --desk-muted: #9aa3b2; --desk-accent: #D8B364; --desk-card: #1b2330; --desk-line: #2f3b4e; --btn: #D8B364; --btn-ink: #0C1D38; --btn-meta: #3d3420; color-scheme: dark; } }
 :root[data-theme="dark"] { --desk: #141a24; --desk-ink: #ece8df; --desk-muted: #9aa3b2; --desk-accent: #D8B364; --desk-card: #1b2330; --desk-line: #2f3b4e; --btn: #D8B364; --btn-ink: #0C1D38; --btn-meta: #3d3420; color-scheme: dark; }
 body { background: var(--desk); padding-inline: 16px; padding-block: 0 8mm; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 .pages { overflow-x: auto; }
-.page { zoom: var(--z, 1); }
+/* Il foglio si impagina sempre a grandezza A4 e si rimpicciolisce con transform: con zoom Safari perdeva
+   bordi e righe sotto il pixel. .sheet occupa in pagina lo spazio del foglio già ridotto. */
+.sheet { width: calc(210mm * var(--z, 1)); height: calc(297mm * var(--z, 1)); margin: calc(8mm * var(--z, 1)) auto; }
+.sheet > .page { margin: 0; transform: scale(var(--z, 1)); transform-origin: 0 0; }
+@media print { .sheet { width: auto; height: auto; margin: 0; } .sheet > .page { transform: none; } }
 .desk { max-width: 210mm; margin: 10mm auto 4mm; display: flex; flex-direction: column; gap: 18px; color: var(--desk-ink); font-size: 15px; line-height: 1.5; }
 .desk .k { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--desk-accent); }
 .desk h1 { font-size: 30px; line-height: 1.1; color: var(--desk-ink); text-wrap: balance; }
@@ -407,7 +412,7 @@ a.dl-btn { text-decoration: none; }
 <main class="pages">
 <div class="doc-divider" id="studybook"><p class="k">Durante la live</p><h2>Studybook</h2><p class="s">12 pagine A5 che seguono le slide mossa per mossa, con il compito a casa e il ripasso del PAV in fondo.</p></div>
 <!-- ============ 01 COPERTINA ============ -->
-<section id="sb-p01" class="page cover">
+<div class="sheet"><section id="sb-p01" class="page cover">
   <div class="content" style="gap:0">
     <div class="top">
       <div class="brand"><svg><use href="#pdfm"/></svg><div class="name">PORTALE DEI<br>FUTURI MEDICI<span>PdFM</span></div></div>
@@ -444,10 +449,10 @@ a.dl-btn { text-decoration: none; }
     </div>
   </div>
   <div class="foot"><span class="brand">PORTALE DEI FUTURI MEDICI</span><span class="num">01 / 12</span></div>
-</section>
+</section></div>
 
 <!-- ============ 02 STASERA ============ -->
-<section id="sb-p02" class="page">
+<div class="sheet"><section id="sb-p02" class="page">
   <div class="head"><p class="eyebrow"><b>Stasera</b> · prima di cominciare</p><span class="tag chat">In chat</span></div>
   <div class="content">
     <div style="display:flex; flex-direction:column; gap:3mm">
@@ -490,10 +495,10 @@ a.dl-btn { text-decoration: none; }
     </div>
   </div>
   <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">02 / 12</span></div>
-</section>
+</section></div>
 
 <!-- ============ 03 MOSSA 1 · APERTURA ============ -->
-<section id="sb-p03" class="page">
+<div class="sheet"><section id="sb-p03" class="page">
   <div class="head"><p class="eyebrow"><b>Mossa 1 · Fabrizio</b> · capire prima di ricordare</p></div>
   <div class="content" style="gap:5mm">
     <h1>Capire prima di ricordare.</h1>
@@ -539,10 +544,10 @@ a.dl-btn { text-decoration: none; }
     </div>
   </div>
   <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">03 / 12</span></div>
-</section>
+</section></div>
 
 <!-- ============ 04 MOSSA 1 · LA MAPPA ============ -->
-<section id="sb-p04" class="page">
+<div class="sheet"><section id="sb-p04" class="page">
   <div class="head"><p class="eyebrow"><b>Mossa 1 · Fabrizio</b> · la tua mappa</p><span class="tag live">Dal vivo</span></div>
   <div class="content" style="gap:4mm">
     <div style="display:flex; flex-direction:column; gap:2mm">
@@ -573,10 +578,10 @@ a.dl-btn { text-decoration: none; }
     </div>
   </div>
   <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">04 / 12</span></div>
-</section>
+</section></div>
 
 <!-- ============ 05 MOSSA 1 · DOMANDA MAI VISTA ============ -->
-<section id="sb-p05" class="page">
+<div class="sheet"><section id="sb-p05" class="page">
   <div class="head"><p class="eyebrow"><b>Mossa 1 · Fabrizio</b> · la prova del nove</p><span class="tag live">Dal vivo</span></div>
   <div class="content">
     <div style="display:flex; flex-direction:column; gap:2mm">
@@ -620,10 +625,10 @@ a.dl-btn { text-decoration: none; }
     </div>
   </div>
   <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">05 / 12</span></div>
-</section>
+</section></div>
 
 <!-- ============ 06 MOSSA 2 · APERTURA ============ -->
-<section id="sb-p06" class="page">
+<div class="sheet"><section id="sb-p06" class="page">
   <div class="head"><p class="eyebrow"><b>Mossa 2 · Matteo</b> · come sapere tutto per l'esame</p></div>
   <div class="content" style="gap:5mm">
     <h1>Come sapere tutto per l'esame.</h1>
@@ -682,10 +687,10 @@ a.dl-btn { text-decoration: none; }
     </div>
   </div>
   <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">06 / 12</span></div>
-</section>
+</section></div>
 
 <!-- ============ 07 MOSSA 3 · CONVINZIONE E PIANO ============ -->
-<section id="sb-p07" class="page">
+<div class="sheet"><section id="sb-p07" class="page">
   <div class="head"><p class="eyebrow"><b>Mossa 3 · Luca</b> · studiare in velocità x10 con l'IA</p><span class="tag live">Dal vivo</span></div>
   <div class="content" style="gap:5mm">
     <h1>Studiare in velocità x10 con l'IA.</h1>
@@ -737,10 +742,10 @@ a.dl-btn { text-decoration: none; }
     </div>
   </div>
   <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">07 / 12</span></div>
-</section>
+</section></div>
 
 <!-- ============ 08 MOSSA 3 · LA PROVA E L'IA ============ -->
-<section id="sb-p08" class="page">
+<div class="sheet"><section id="sb-p08" class="page">
   <div class="head"><p class="eyebrow"><b>Mossa 3 · Luca</b> · la prova e l'insegnante automatico</p><span class="tag live">Dal vivo</span></div>
   <div class="content" style="gap:5mm">
     <div class="box" style="gap:3.5mm">
@@ -787,10 +792,10 @@ a.dl-btn { text-decoration: none; }
     </div>
   </div>
   <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">08 / 12</span></div>
-</section>
+</section></div>
 
 <!-- ============ 09 FINE SERATA ============ -->
-<section id="sb-p09" class="page">
+<div class="sheet"><section id="sb-p09" class="page">
   <div class="head"><p class="eyebrow"><b>Stasera</b> · prima di chiudere Zoom</p><span class="tag chat">In chat</span></div>
   <div class="content">
     <h1>Guarda il tuo quaderno.</h1>
@@ -839,10 +844,10 @@ a.dl-btn { text-decoration: none; }
     </div>
   </div>
   <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">09 / 12</span></div>
-</section>
+</section></div>
 
 <!-- ============ 10 COMPITI · DOMANI · LA STORIA DI MATTEO ============ -->
-<section id="sb-p10" class="page">
+<div class="sheet"><section id="sb-p10" class="page">
   <div class="head"><p class="eyebrow"><b>Compito · domani</b> · prima di aprire il libro</p><span class="tag casa">A casa</span></div>
   <div class="content" style="gap:5mm">
     <div style="display:flex; flex-direction:column; gap:2.5mm">
@@ -876,10 +881,10 @@ a.dl-btn { text-decoration: none; }
     </div>
   </div>
   <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">10 / 12</span></div>
-</section>
+</section></div>
 
 <!-- ============ 11 RIPASSO · COME SI USA IL PAV ============ -->
-<section id="sb-p11" class="page">
+<div class="sheet"><section id="sb-p11" class="page">
   <div class="head"><p class="eyebrow"><b>Ripasso · Matteo</b> · la tecnica PAV</p><span class="tag ripasso">Ripasso</span></div>
   <div class="content" style="gap:5mm">
     <div style="display:flex; flex-direction:column; gap:2.5mm">
@@ -922,20 +927,20 @@ a.dl-btn { text-decoration: none; }
     </div>
   </div>
   <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">11 / 12</span></div>
-</section>
+</section></div>
 
 <!-- ============ 12 APPUNTI ============ -->
-<section id="sb-p12" class="page">
+<div class="sheet"><section id="sb-p12" class="page">
   <div class="head"><p class="eyebrow"><b>Appunti</b> · tutto quello che non sta altrove</p></div>
   <div class="content">
     <div class="notes"></div>
   </div>
   <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">12 / 12</span></div>
-</section>
+</section></div>
 
 <div class="doc-divider" id="programma"><p class="k">Dopo la live</p><h2>Programma d'esame</h2><p class="s">12 pagine A5: i 125 argomenti del syllabus ufficiale 2026, con tre caselle ciascuno.</p></div>
 <!-- ============ PROGRAMMA · 01 COPERTINA ============ -->
-<section id="pr-p01" class="page cover">
+<div class="sheet"><section id="pr-p01" class="page cover">
   <div class="content" style="gap:0">
     <div class="top">
       <div class="brand"><svg><use href="#pdfm"/></svg><div class="name">PORTALE DEI<br>FUTURI MEDICI<span>PdFM</span></div></div>
@@ -971,9 +976,9 @@ a.dl-btn { text-decoration: none; }
     </div>
   </div>
   <div class="foot"><span class="brand">PORTALE DEI FUTURI MEDICI</span><span class="num">01 / 12</span></div>
-</section>
+</section></div>
 
-<section id="pr-p02" class="page" style="--c:var(--fisica)">
+<div class="sheet"><section id="pr-p02" class="page" style="--c:var(--fisica)">
   <div class="head"><p class="eyebrow"><b>Programma · Fisica</b> · syllabus ufficiale 2026</p></div>
   <div class="content" style="gap:4mm">
     <div class="cl-intro">
@@ -1003,9 +1008,9 @@ a.dl-btn { text-decoration: none; }
     </div>
   </div>
   <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">02 / 12</span></div>
-</section>
+</section></div>
 
-<section id="pr-p03" class="page" style="--c:var(--fisica)">
+<div class="sheet"><section id="pr-p03" class="page" style="--c:var(--fisica)">
   <div class="head"><p class="eyebrow"><b>Programma · Fisica</b> · segue</p></div>
   <div class="content" style="gap:4mm">
     
@@ -1033,9 +1038,9 @@ a.dl-btn { text-decoration: none; }
     </div>
   </div>
   <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">03 / 12</span></div>
-</section>
+</section></div>
 
-<section id="pr-p04" class="page" style="--c:var(--fisica)">
+<div class="sheet"><section id="pr-p04" class="page" style="--c:var(--fisica)">
   <div class="head"><p class="eyebrow"><b>Programma · Fisica</b> · segue</p></div>
   <div class="content" style="gap:4mm">
     
@@ -1058,9 +1063,9 @@ a.dl-btn { text-decoration: none; }
     </div>
   </div>
   <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">04 / 12</span></div>
-</section>
+</section></div>
 
-<section id="pr-p05" class="page" style="--c:var(--chimica)">
+<div class="sheet"><section id="pr-p05" class="page" style="--c:var(--chimica)">
   <div class="head"><p class="eyebrow"><b>Programma · Chimica</b> · syllabus ufficiale 2026</p></div>
   <div class="content" style="gap:4mm">
     <div class="cl-intro">
@@ -1088,9 +1093,9 @@ a.dl-btn { text-decoration: none; }
     </div>
   </div>
   <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">05 / 12</span></div>
-</section>
+</section></div>
 
-<section id="pr-p06" class="page" style="--c:var(--chimica)">
+<div class="sheet"><section id="pr-p06" class="page" style="--c:var(--chimica)">
   <div class="head"><p class="eyebrow"><b>Programma · Chimica</b> · segue</p></div>
   <div class="content" style="gap:4mm">
     
@@ -1117,9 +1122,9 @@ a.dl-btn { text-decoration: none; }
     </div>
   </div>
   <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">06 / 12</span></div>
-</section>
+</section></div>
 
-<section id="pr-p07" class="page" style="--c:var(--chimica)">
+<div class="sheet"><section id="pr-p07" class="page" style="--c:var(--chimica)">
   <div class="head"><p class="eyebrow"><b>Programma · Chimica</b> · segue</p></div>
   <div class="content" style="gap:4mm">
     
@@ -1145,9 +1150,9 @@ a.dl-btn { text-decoration: none; }
     </div>
   </div>
   <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">07 / 12</span></div>
-</section>
+</section></div>
 
-<section id="pr-p08" class="page" style="--c:var(--chimica)">
+<div class="sheet"><section id="pr-p08" class="page" style="--c:var(--chimica)">
   <div class="head"><p class="eyebrow"><b>Programma · Chimica</b> · segue</p></div>
   <div class="content" style="gap:4mm">
     
@@ -1165,9 +1170,9 @@ a.dl-btn { text-decoration: none; }
     </div>
   </div>
   <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">08 / 12</span></div>
-</section>
+</section></div>
 
-<section id="pr-p09" class="page" style="--c:var(--biologia)">
+<div class="sheet"><section id="pr-p09" class="page" style="--c:var(--biologia)">
   <div class="head"><p class="eyebrow"><b>Programma · Biologia</b> · syllabus ufficiale 2026</p></div>
   <div class="content" style="gap:4mm">
     <div class="cl-intro">
@@ -1196,9 +1201,9 @@ a.dl-btn { text-decoration: none; }
     </div>
   </div>
   <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">09 / 12</span></div>
-</section>
+</section></div>
 
-<section id="pr-p10" class="page" style="--c:var(--biologia)">
+<div class="sheet"><section id="pr-p10" class="page" style="--c:var(--biologia)">
   <div class="head"><p class="eyebrow"><b>Programma · Biologia</b> · segue</p></div>
   <div class="content" style="gap:4mm">
     
@@ -1225,9 +1230,9 @@ a.dl-btn { text-decoration: none; }
     </div>
   </div>
   <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">10 / 12</span></div>
-</section>
+</section></div>
 
-<section id="pr-p11" class="page" style="--c:var(--biologia)">
+<div class="sheet"><section id="pr-p11" class="page" style="--c:var(--biologia)">
   <div class="head"><p class="eyebrow"><b>Programma · Biologia</b> · segue</p></div>
   <div class="content" style="gap:4mm">
     
@@ -1253,9 +1258,9 @@ a.dl-btn { text-decoration: none; }
     </div>
   </div>
   <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">11 / 12</span></div>
-</section>
+</section></div>
 
-<section id="pr-p12" class="page" style="--c:var(--biologia)">
+<div class="sheet"><section id="pr-p12" class="page" style="--c:var(--biologia)">
   <div class="head"><p class="eyebrow"><b>Programma · Biologia</b> · segue</p></div>
   <div class="content" style="gap:4mm">
     
@@ -1268,7 +1273,7 @@ a.dl-btn { text-decoration: none; }
     </div>
   </div>
   <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">12 / 12</span></div>
-</section>
+</section></div>
 </main>
 
 <script>
@@ -1285,17 +1290,25 @@ function drawLines() {
     for (let k = 0; k < n; k++) el.appendChild(document.createElement('i'));
   });
 }
-function fit() {
-  const root = document.documentElement.style;
-  root.setProperty('--z', 1);
-  const w = document.querySelector('.page').offsetWidth;
-  const avail = document.querySelector('.pages').clientWidth;
-  root.setProperty('--z', Math.min(1, avail / w).toFixed(4));
+// iPhone e iPad: toccando un campo dal testo piccolo Safari ingrandisce la pagina e la lascia spostata.
+// maximum-scale=1 ferma solo quello: su iOS lo zoom con due dita resta libero.
+if (/iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)) {
+  const vp = document.querySelector('meta[name="viewport"]');
+  if (vp && !/maximum-scale/.test(vp.content)) vp.content += ', maximum-scale=1';
 }
-function render() { document.documentElement.style.setProperty('--z', 1); drawLines(); fit(); }
-fit();
+const SHEET_W = 210 * 96 / 25.4;  // 210 mm in px CSS
+let fitW = 0;
+function fit(force) {
+  // solo se cambia la larghezza: su iPhone la barra degli indirizzi che compare e sparisce manda resize a ogni scroll
+  const avail = document.querySelector('.pages').clientWidth;
+  if (!force && avail === fitW) return;
+  fitW = avail;
+  document.documentElement.style.setProperty('--z', String(Math.floor(Math.min(1, avail / SHEET_W) * 1e4) / 1e4));
+}
+function render() { document.documentElement.style.setProperty('--z', 1); drawLines(); fit(true); }
+fit(true);
 document.fonts.ready.then(() => { render(); linkPages(); interactive(); });
-addEventListener('resize', fit);
+addEventListener('resize', () => fit());
 // Compilazione a schermo: caselle, scelte e righe diventano campi veri. Le risposte restano nel browser
 // di chi compila (localStorage): gli studenti aprono il link pubblico, spesso senza account Claude.
 const STORE_KEY = 'pdfm-quaderno-v1';
