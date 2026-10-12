@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Studybook della live del 12 ottobre | Portale dei Futuri Medici</title>
+<meta name="description" content="Lo Studybook e il Programma d'esame della live del 12 ottobre: da compilare qui o da scaricare e stampare.">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://portaledeifuturimedici.com/studybook-12Ottobre/">
+<meta property="og:title" content="Studybook della live del 12 ottobre | Portale dei Futuri Medici">
+<meta property="og:description" content="Lo Studybook e il Programma d'esame della live del 12 ottobre: da compilare qui o da scaricare e stampare.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Portale dei Futuri Medici">
+<meta property="og:locale" content="it_IT">
+<meta property="og:url" content="https://portaledeifuturimedici.com/studybook-12Ottobre/">
+<meta property="og:image" content="https://portaledeifuturimedici.com/appunti/og.png">
+<link rel="icon" href="/appunti/brand/favicon.svg">
+<link rel="icon" type="image/png" sizes="192x192" href="/appunti/brand/icona-192.png">
+<link rel="apple-touch-icon" href="/appunti/brand/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #0C1D38;
+  --ink: #17191c;
+  --ink-2: #3d3b36;
+  --muted: #55534e;
+  --subtle: #7d7a73;
+  --line: #dbd8d2;
+  --rule: #b9b4aa;
+  --soft: #F1EFEB;
+  --oro: #D8B364;
+  --accento: #8a6d24;
+  --fisica: #C4176C;
+  --chimica: #0E7C86;
+  --biologia: #8a6d24;
+  --ciano: #3FD3DE;
+  --fucsia: #EF4C9B;
+  --giallo: #F5C93B;
+  --sans: Archivo, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --hand: Caveat, "Bradley Hand", cursive;
+}
+/* Il foglio si disegna in coordinate A4 e in stampa si riduce ad A5 (zoom 0.7047: 210 mm diventano 148). */
+@page { size: A5; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root { --desk: #e6e3dd; --desk-ink: #0C1D38; --desk-muted: #5d5a54; --desk-accent: #8a6d24; --desk-card: #f2f0ec; --desk-line: #cdc8bf; --btn: #0C1D38; --btn-ink: #ffffff; --btn-meta: #c5cfde; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --desk: #141a24; --desk-ink: #ece8df; --desk-muted: #9aa3b2; --desk-accent: #D8B364; --desk-card: #1b2330; --desk-line: #2f3b4e; --btn: #D8B364; --btn-ink: #0C1D38; --btn-meta: #3d3420; color-scheme: dark; } }
+:root[data-theme="dark"] { --desk: #141a24; --desk-ink: #ece8df; --desk-muted: #9aa3b2; --desk-accent: #D8B364; --desk-card: #1b2330; --desk-line: #2f3b4e; --btn: #D8B364; --btn-ink: #0C1D38; --btn-meta: #3d3420; color-scheme: dark; }
+body { background: var(--desk); padding-inline: 16px; padding-block: 0 8mm; }
+.pages { overflow-x: auto; }
+.page { zoom: var(--z, 1); }
+.desk { max-width: 210mm; margin: 10mm auto 4mm; display: flex; flex-direction: column; gap: 18px; color: var(--desk-ink); font-size: 15px; line-height: 1.5; }
+.desk .k { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--desk-accent); }
+.desk h1 { font-size: 30px; line-height: 1.1; color: var(--desk-ink); text-wrap: balance; }
+.desk .s { font-size: 15px; color: var(--desk-muted); max-width: 64ch; }
+.desk .jump { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 14px; }
+.desk .jump a { color: var(--desk-ink); text-underline-offset: 3px; }
+.dl-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.dl-btn { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; padding: 14px 16px; border-radius: 6px; border: 1.5px solid var(--btn); background: transparent; color: var(--desk-ink); font: inherit; text-align: left; cursor: pointer; min-width: 0; }
+.dl-btn.primary { background: var(--btn); color: var(--btn-ink); }
+.dl-btn .lbl { font-family: var(--mono); font-size: 13px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; }
+.dl-btn .meta { font-size: 13px; color: var(--desk-muted); }
+.dl-btn.primary .meta { color: var(--btn-meta); }
+.dl-btn:hover { filter: brightness(1.08); }
+.dl-btn:focus-visible { outline: 3px solid var(--desk-accent); outline-offset: 2px; }
+.dl-btn:disabled { opacity: .55; cursor: default; filter: none; }
+.dl-status { min-height: 1.5em; font-size: 14px; color: var(--desk-muted); }
+.tut { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.tut > div { background: var(--desk-card); border: 1px solid var(--desk-line); border-radius: 6px; padding: 14px 16px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.tut h2 { font-size: 17px; line-height: 1.2; color: var(--desk-ink); }
+.tut ol { padding-left: 20px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: var(--desk-ink); }
+.tut li::marker { color: var(--desk-accent); font-weight: 700; }
+.tut p { font-size: 13px; color: var(--desk-muted); }
+.doc-divider { max-width: 210mm; margin: 12mm auto 0; display: flex; flex-direction: column; gap: 4px; border-top: 1px solid var(--desk-line); padding-top: 14px; }
+.doc-divider h2 { font-size: 22px; color: var(--desk-ink); }
+.doc-divider .k { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--desk-accent); }
+.doc-divider .s { font-size: 14px; color: var(--desk-muted); }
+@media (max-width: 560px) { .dl-grid, .tut { grid-template-columns: 1fr; } .desk h1 { font-size: 25px; } }
+.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; max-width: 210mm; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 6px 18px; padding-block: 10px; background: var(--desk); border-bottom: 1px solid var(--desk-line); font-size: 14px; }
+.bar a { color: var(--desk-ink); font-weight: 600; text-decoration: none; }
+.bar a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.bar .prog { margin-left: auto; color: var(--desk-muted); font-variant-numeric: tabular-nums; }
+.bar .prog b { color: var(--desk-ink); }
+.fillhere { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; border: 1px solid var(--desk-line); border-radius: 6px; padding: 12px 16px; font-size: 14px; color: var(--desk-ink); }
+.fillhere p { flex: 1 1 320px; min-width: 0; }
+.reset { font: inherit; font-size: 13px; padding: 7px 12px; border-radius: 6px; border: 1px solid var(--desk-line); background: transparent; color: var(--desk-ink); cursor: pointer; }
+.reset:focus-visible { outline: 3px solid var(--desk-accent); outline-offset: 2px; }
+#scarica, .page, .doc-divider { scroll-margin-top: 60px; }
+/* compilazione a schermo: dentro i fogli è sempre carta bianca, l'inchiostro è blu penna */
+:root { --pen: #1f3f8f; }
+.page [role="checkbox"], .page [role="radio"] { cursor: pointer; }
+.page .check.on::before, .page .cl-arg i.on { background: var(--navy) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3.5 8.5l3 3 6-7' fill='none' stroke='white' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/85% no-repeat; border-color: var(--navy); }
+.page .cl-arg i.on { background-color: var(--c); border-color: var(--c); }
+.page .cl-arg.done { background: color-mix(in srgb, var(--c) 8%, #fff); }
+.page .cl-arg.done .t b { color: var(--c); }
+.page [role="checkbox"]:focus-visible, .page [role="radio"]:focus-visible, .page input:focus-visible, .page textarea:focus-visible, .page a.pref:focus-visible { outline: .6mm solid var(--oro); outline-offset: .5mm; }
+.page .prob > div.on { border-color: var(--navy); background: var(--soft); }
+.page .prob > div.on .n, .page .opt.on .l { background: var(--navy); color: #fff; }
+.page input.in-line { flex: 1; min-width: 0; height: 6mm; border: 0; border-bottom: .3mm solid var(--rule); border-radius: 0; background: transparent; font: 600 14pt/1 var(--hand); color: var(--pen); padding: 0 1mm; }
+.page .owner input.in-line { height: 10mm; border-bottom: .4mm solid var(--navy); font-size: 19pt; }
+.page .score input.in-line { flex: none; width: 14mm; height: 7mm; text-align: center; border-bottom: .4mm solid var(--navy); font-size: 16pt; }
+.page .score[data-score] .ln { display: inline-flex; align-items: flex-end; justify-content: center; font: 600 16pt/1 var(--hand); color: var(--pen); }
+.page .lines, .page .notes { position: relative; }
+.page textarea.in-area { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; background: transparent; resize: none; font: 600 15pt/7.8mm var(--hand); color: var(--pen); padding: 0 1mm; overflow-y: auto; }
+.page .slot input.in-slot { position: absolute; left: 1.4mm; right: 1.4mm; bottom: .6mm; height: 8.5mm; width: calc(100% - 2.8mm); border: 0; background: transparent; font: 600 15pt/1 var(--hand); color: var(--pen); }
+.page .plan td textarea.in-cell { display: block; width: 100%; height: 12.5mm; border: 0; background: transparent; resize: none; font: 600 12.5pt/1.05 var(--hand); color: var(--pen); padding: .8mm 0; }
+.page a.pref { color: inherit; text-decoration: underline; text-decoration-color: var(--oro); text-decoration-thickness: .5mm; text-underline-offset: .6mm; }
+body {
+  font-family: var(--sans); color: var(--ink); font-size: 10.5pt; line-height: 1.45;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+}
+@media print { html, body { background: #fff; } .page { margin: 0 !important; box-shadow: none !important; zoom: .7047; } }
+
+.page {
+  width: 210mm; height: 297mm; padding: 14mm 15mm 0; margin: 8mm auto;
+  background: #fff; position: relative; overflow: hidden;
+  display: flex; flex-direction: column; gap: 6mm;
+  break-after: page; box-shadow: 0 1px 6px rgba(0,0,0,.12);
+}
+.page:last-child { break-after: auto; }
+.content { flex: 1; display: flex; flex-direction: column; gap: 6mm; min-height: 0; }
+
+/* intestazione e piede */
+.head { display: flex; justify-content: space-between; align-items: center; padding-bottom: 3mm; border-bottom: .3mm solid var(--line); }
+.eyebrow { font-family: var(--mono); font-size: 8.6pt; letter-spacing: .14em; text-transform: uppercase; color: var(--subtle); }
+.eyebrow b { color: var(--navy); font-weight: 500; }
+.foot {
+  height: 13mm; display: flex; align-items: center; justify-content: space-between;
+  border-top: .3mm solid var(--line); margin: 0 0 0; flex: none;
+}
+.foot .brand { display: flex; align-items: center; gap: 2.5mm; font-weight: 700; font-size: 8.4pt; letter-spacing: .06em; color: var(--navy); }
+.foot .brand svg { width: 6mm; height: 6mm; }
+.foot .num { font-family: var(--mono); font-size: 8.6pt; letter-spacing: .1em; color: var(--subtle); }
+
+/* tipografia */
+h1 { font-size: 27pt; line-height: 1.05; letter-spacing: -.025em; color: var(--navy); font-weight: 700; }
+h2 { font-size: 17pt; line-height: 1.12; letter-spacing: -.02em; color: var(--navy); font-weight: 700; }
+h3 { font-size: 11.5pt; line-height: 1.2; letter-spacing: -.01em; color: var(--navy); font-weight: 700; }
+.lead { font-size: 11pt; color: var(--ink-2); line-height: 1.45; }
+.small { font-size: 9.8pt; color: var(--muted); line-height: 1.4; }
+.hand { font-family: var(--hand); font-size: 14pt; color: var(--accento); line-height: 1; }
+.kicker { font-family: var(--mono); font-size: 8.4pt; letter-spacing: .14em; text-transform: uppercase; color: var(--accento); font-weight: 500; }
+
+/* etichette */
+.tag { display: inline-flex; align-items: center; gap: 1.6mm; font-family: var(--mono); font-size: 8.2pt; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; padding: .9mm 2.4mm; border-radius: 1mm; white-space: nowrap; }
+.tag.live { background: var(--navy); color: #fff; }
+.tag.live::before { content: ""; width: 1.8mm; height: 1.8mm; border-radius: 50%; background: var(--fucsia); }
+.tag.chat { border: .35mm solid var(--navy); color: var(--navy); }
+.tag.chat::before { content: ""; width: 3mm; height: 2.6mm; background: no-repeat center/contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 30'%3E%3Cpath d='M4 2h24a3 3 0 0 1 3 3v15a3 3 0 0 1-3 3H13l-7 6v-6H4a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3z' fill='%23D8B364' stroke='%230C1D38' stroke-width='2'/%3E%3C/svg%3E"); }
+
+/* blocchi */
+.box { border: .35mm solid var(--line); border-radius: 1.5mm; padding: 4.5mm 5mm; display: flex; flex-direction: column; gap: 2.5mm; }
+.box.soft { background: var(--soft); border-color: var(--soft); }
+.box.navy { background: var(--navy); border-color: var(--navy); color: #fff; }
+.box.navy h3, .box.navy h2 { color: #fff; }
+.box.gold { border-color: var(--oro); border-width: .5mm; }
+.box.dash { border-style: dashed; border-color: var(--rule); }
+.row { display: flex; gap: 5mm; }
+.row > * { flex: 1; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; }
+.grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4mm; }
+
+/* righe per scrivere: le crea lo script in fondo, come bordi veri (i gradienti a righe sottili spariscono in stampa) */
+.lines, .notes { display: flex; flex-direction: column; overflow: hidden; }
+.lines > i, .notes > i { flex: none; height: 7.8mm; border-bottom: .3mm solid var(--rule); }
+.notes > i { border-bottom-color: var(--line); }
+.fill { display: flex; align-items: flex-end; gap: 2.5mm; }
+.fill .lbl { white-space: nowrap; font-weight: 600; color: var(--navy); }
+.fill .ln { flex: 1; border-bottom: .3mm solid var(--rule); height: 6mm; }
+
+/* caselle */
+.check { display: flex; gap: 3mm; align-items: flex-start; }
+.check::before { content: ""; flex: none; width: 4.2mm; height: 4.2mm; border: .4mm solid var(--navy); border-radius: .8mm; margin-top: .4mm; }
+.checks { display: flex; flex-direction: column; gap: 2.4mm; }
+
+.quote { font-size: 15pt; line-height: 1.25; font-weight: 600; color: var(--navy); letter-spacing: -.01em; }
+.quote.big { font-size: 19pt; }
+.by { font-family: var(--mono); font-size: 8.4pt; letter-spacing: .12em; text-transform: uppercase; color: var(--subtle); }
+
+.badge { flex: none; width: 7mm; height: 7mm; border-radius: 50%; background: var(--navy); color: #fff; font-weight: 700; font-size: 10pt; display: flex; align-items: center; justify-content: center; }
+.badge.gold { background: var(--oro); color: var(--navy); }
+.badge.out { background: #fff; color: var(--navy); border: .4mm solid var(--navy); }
+
+.statnum { font-size: 34pt; font-weight: 800; letter-spacing: -.03em; line-height: .95; color: var(--navy); }
+
+/* copertina */
+.cover { padding: 18mm 18mm 0; }
+.cover .top { display: flex; justify-content: space-between; align-items: center; }
+.cover .brand { display: flex; align-items: center; gap: 3.5mm; }
+.cover .brand svg { width: 13mm; height: 13mm; }
+.cover .brand .name { font-weight: 700; font-size: 10pt; letter-spacing: .07em; color: var(--navy); line-height: 1.15; }
+.cover .brand .name span { display: block; font-family: var(--mono); font-weight: 500; font-size: 8.4pt; letter-spacing: .3em; color: var(--accento); }
+.cover h1 { font-size: 58pt; letter-spacing: -.04em; line-height: .95; }
+.cover .sub { font-size: 22pt; font-weight: 600; color: var(--accento); letter-spacing: -.02em; line-height: 1.1; }
+.cover .when { display: flex; gap: 6mm; font-family: var(--mono); font-size: 9.5pt; letter-spacing: .08em; color: var(--navy); text-transform: uppercase; }
+.cover .when span { padding: 1.6mm 3.2mm; border: .35mm solid var(--navy); border-radius: 1mm; }
+.people { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5mm; }
+.person { border-top: .8mm solid var(--oro); padding-top: 3mm; }
+.person b { display: block; font-size: 11.5pt; color: var(--navy); }
+.person span { font-size: 9.8pt; color: var(--muted); }
+.owner { display: flex; align-items: flex-end; gap: 3mm; }
+.owner .lbl { font-size: 13pt; font-weight: 600; color: var(--navy); white-space: nowrap; }
+.owner .ln { flex: 1; border-bottom: .4mm solid var(--navy); height: 10mm; }
+.howto ol { list-style: none; display: flex; flex-direction: column; gap: 2.6mm; counter-reset: h; }
+.howto li { display: flex; gap: 3mm; counter-increment: h; font-size: 10pt; }
+.howto li::before { content: counter(h); flex: none; width: 5.5mm; height: 5.5mm; border-radius: 50%; background: var(--navy); color: #fff; font-weight: 700; font-size: 8.5pt; display: flex; align-items: center; justify-content: center; margin-top: .2mm; }
+.notebook-art { position: absolute; right: 18mm; top: 60mm; width: 56mm; }
+
+/* mosse */
+.mossa { display: grid; grid-template-columns: 9mm 1fr; gap: 3.5mm; align-items: start; padding: 3.5mm 0; border-bottom: .3mm solid var(--line); }
+.mossa:last-child { border-bottom: none; }
+.mossa .n { font-size: 24pt; font-weight: 800; color: var(--oro); line-height: .9; }
+.mossa b { font-size: 12pt; color: var(--navy); display: block; }
+.mossa span { font-size: 9.5pt; color: var(--muted); }
+
+.prob { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4mm; }
+.prob div { border: .35mm solid var(--line); border-radius: 1.5mm; padding: 3.5mm; display: flex; flex-direction: column; gap: 2mm; }
+.prob .n { width: 9mm; height: 9mm; border-radius: 50%; border: .45mm solid var(--navy); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 13pt; color: var(--navy); }
+.prob p { font-weight: 600; color: var(--navy); font-size: 10pt; line-height: 1.3; }
+
+.subj { display: flex; gap: 6mm; }
+.subj .check b { font-weight: 600; }
+
+/* mappa */
+.map { position: relative; flex: 1; min-height: 0; }
+.map svg.wires { position: absolute; inset: 0; width: 100%; height: 100%; }
+.map .cells { position: absolute; inset: 0; display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 1fr 1fr 1fr; gap: 6mm 6mm; }
+.map .q { background: #fff; border: .35mm solid var(--rule); border-radius: 2mm; padding: 3mm 3.5mm; display: flex; flex-direction: column; gap: 2mm; }
+.map .q .qh { display: flex; gap: 2.4mm; align-items: flex-start; }
+.map .q .qh .badge { width: 6mm; height: 6mm; font-size: 8.5pt; }
+.map .q .qh p { font-weight: 700; color: var(--navy); font-size: 10pt; line-height: 1.25; }
+.map .q .lines { flex: 1; }
+.map .q.why { border: .55mm dashed var(--oro); }
+.map .q.why .kicker { margin-bottom: -.5mm; }
+.map .center { display: flex; align-items: center; justify-content: center; }
+.map .center div { width: 100%; aspect-ratio: 1.35; border-radius: 50%; background: var(--navy); color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 1.5mm; border: 1.2mm solid var(--oro); }
+.map .center b { font-size: 15pt; line-height: 1.05; letter-spacing: -.02em; }
+.map .center span { font-family: var(--mono); font-size: 7.8pt; letter-spacing: .14em; text-transform: uppercase; color: var(--oro); }
+
+/* dizionario */
+table { width: 100%; border-collapse: collapse; }
+.dict th { font-family: var(--mono); font-weight: 500; font-size: 7.5pt; letter-spacing: .12em; text-transform: uppercase; color: var(--subtle); text-align: left; padding: 0 0 2mm; }
+.dict td { border-top: .3mm solid var(--line); height: 17.6mm; vertical-align: middle; }
+.dict td.num { width: 9mm; font-family: var(--mono); font-size: 8.5pt; color: var(--subtle); }
+.dict td.fase { width: 30mm; font-family: var(--mono); font-size: 7pt; letter-spacing: .1em; text-transform: uppercase; color: var(--accento); vertical-align: top; padding-top: 2.2mm; }
+.dict td.word { width: 46mm; font-weight: 700; font-size: 12pt; color: var(--navy); }
+.dict td.img { border-left: .3mm dashed var(--rule); padding-left: 4mm; }
+.dict tr.first td { border-top: .6mm solid var(--navy); }
+
+.scene { flex: 1; border: .35mm solid var(--rule); border-radius: 2mm; display: flex; flex-direction: column; min-height: 0; background-image: radial-gradient(circle, #cfcac0 .28mm, transparent .32mm); background-size: 5mm 5mm; background-position: 2.5mm 2.5mm; }
+.scene .sh { background: #fff; border-bottom: .35mm solid var(--rule); padding: 2.6mm 4mm; display: flex; justify-content: space-between; align-items: center; border-radius: 2mm 2mm 0 0; }
+.scene .sh b { color: var(--navy); font-size: 11pt; }
+
+.why4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3.5mm; }
+.why4 div { border-top: .6mm solid var(--oro); padding-top: 2mm; font-size: 9.8pt; color: var(--ink-2); line-height: 1.3; }
+.why4 b { display: block; color: var(--navy); font-size: 9.5pt; margin-bottom: .6mm; }
+
+/* forma esame */
+.squares { display: flex; gap: 1.1mm; width: 100%; }
+.squares i { width: 4.1mm; height: 4.1mm; border-radius: .7mm; background: var(--navy); flex: none; }
+.squares i.c1 { margin-left: 2.2mm; }
+.squares i.c { background: #fff; border: .5mm solid var(--accento); background-image: repeating-linear-gradient(45deg, transparent 0 .9mm, rgba(216,179,100,.55) .9mm 1.3mm); }
+.legend { display: flex; gap: 6mm; font-size: 9.8pt; color: var(--ink-2); align-items: center; }
+.legend span { display: inline-flex; align-items: center; gap: 2mm; }
+.legend i { width: 3.6mm; height: 3.6mm; border-radius: .6mm; background: var(--navy); display: inline-block; }
+.legend i.c { background: #fff; border: .45mm solid var(--accento); background-image: repeating-linear-gradient(45deg, transparent 0 .7mm, rgba(216,179,100,.55) .7mm 1mm); }
+
+.opts { display: flex; flex-direction: column; gap: 2mm; }
+.opt { display: flex; align-items: center; gap: 3mm; font-size: 10.5pt; }
+.opt .l { width: 6.5mm; height: 6.5mm; border-radius: 50%; border: .4mm solid var(--navy); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 9pt; color: var(--navy); flex: none; }
+
+/* piano */
+.plan th { font-family: var(--mono); font-weight: 500; font-size: 8.4pt; letter-spacing: .12em; text-transform: uppercase; text-align: left; padding: 0 2mm 1.6mm; }
+.plan th.f { color: var(--fisica); border-bottom: .8mm solid var(--fisica); }
+.plan th.c { color: var(--chimica); border-bottom: .8mm solid var(--chimica); }
+.plan th.b { color: var(--biologia); border-bottom: .8mm solid var(--biologia); }
+.plan th.w { color: var(--subtle); border-bottom: .8mm solid var(--navy); padding-left: 0; }
+.plan td { border-bottom: .3mm solid var(--line); height: 12.6mm; padding: 0 2mm; vertical-align: middle; }
+.plan td + td { border-left: .3mm solid var(--line); }
+.plan td.w { padding-left: 0; width: 38mm; font-size: 9.8pt; color: var(--ink-2); }
+.plan td.w b { display: block; font-size: 9.5pt; color: var(--navy); }
+.plan tr.top td.w b { color: var(--fisica); }
+.flag { display: flex; align-items: center; gap: 2.5mm; font-family: var(--mono); font-size: 8.6pt; letter-spacing: .1em; text-transform: uppercase; color: var(--navy); }
+.flag::before { content: ""; width: 2.6mm; height: 2.6mm; border-radius: 50%; background: var(--navy); }
+.flag.gold::before { background: var(--oro); }
+
+/* catena domani */
+.chain { display: flex; flex-direction: column; gap: 4mm; }
+.chain .grp { display: grid; grid-template-columns: 28mm 1fr; gap: 3mm; align-items: center; }
+.chain .grp .g { font-family: var(--mono); font-size: 8.4pt; letter-spacing: .12em; text-transform: uppercase; color: var(--accento); line-height: 1.3; }
+.chain .slots { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2.4mm; }
+.slot { height: 14mm; border: .35mm solid var(--rule); border-radius: 1.5mm; position: relative; }
+.slot::after { content: attr(data-n); position: absolute; left: 1.6mm; top: 1mm; font-family: var(--mono); font-size: 8pt; color: var(--subtle); }
+.chain .slot.wide { grid-column: span 2; }
+.score { display: flex; align-items: flex-end; gap: 2mm; font-weight: 700; color: var(--navy); font-size: 12pt; }
+.score .ln { width: 14mm; border-bottom: .4mm solid var(--navy); height: 7mm; }
+
+.notes { flex: 1; min-height: 0; }
+.plan.collect td { height: 14mm; }
+
+/* compiti a casa */
+.tag.casa { background: var(--oro); color: var(--navy); }
+.tag.ripasso { border: .35mm solid var(--oro); color: var(--accento); }
+.tag.casa::before { content: ""; width: 1.8mm; height: 1.8mm; border-radius: 50%; background: var(--navy); }
+.steps { display: grid; gap: 4mm; }
+.steps > div { border-top: .6mm solid var(--navy); padding-top: 2mm; display: flex; flex-direction: column; gap: .8mm; }
+.steps .when { font-family: var(--mono); font-size: 8.2pt; letter-spacing: .12em; text-transform: uppercase; color: var(--accento); }
+.steps b { color: var(--navy); font-size: 10pt; line-height: 1.25; }
+.steps span { font-size: 9.6pt; color: var(--muted); line-height: 1.3; }
+.box.navy .steps > div { border-top-color: var(--oro); }
+.box.navy .steps .when { color: var(--oro); }
+.box.navy .steps b { color: #fff; }
+.box.navy .steps span { color: #C5CFDE; }
+.pav { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4mm; }
+.pav > div { border: .35mm solid var(--line); border-radius: 1.5mm; padding: 4mm; display: flex; flex-direction: column; gap: 1.8mm; }
+.pav .L { font-size: 30pt; font-weight: 800; color: var(--oro); line-height: .9; }
+.pav b { color: var(--navy); font-size: 11.5pt; }
+.pav p { font-size: 9.8pt; color: var(--ink-2); line-height: 1.35; }
+
+/* checklist del programma */
+.cl { display: flex; flex-direction: column; flex: 1; min-height: 0; }
+.cl-cols, .cl-arg { display: grid; grid-template-columns: 10mm 1fr 15mm 15mm 15mm; column-gap: 1.2mm; align-items: start; }
+.cl-cols { font-family: var(--mono); font-size: 7.4pt; letter-spacing: .05em; text-transform: uppercase; color: var(--subtle); padding-bottom: 1.6mm; border-bottom: .6mm solid var(--navy); }
+.cl-cols span:nth-child(n+3) { text-align: center; color: var(--navy); font-weight: 500; }
+.cl-ud { display: grid; grid-template-columns: 10mm 1fr auto; column-gap: 1.2mm; align-items: start; padding: 2.2mm 0 1.2mm; border-bottom: .3mm solid var(--rule); }
+.cl-ud .n { font-family: var(--mono); font-size: 8.4pt; font-weight: 500; letter-spacing: .06em; color: var(--c); padding-top: .4mm; }
+.cl-ud b { font-size: 10.6pt; color: var(--navy); line-height: 1.25; }
+.cl-ud .cfu { text-align: right; padding-left: 3mm; font-family: var(--mono); font-size: 7.4pt; letter-spacing: .05em; color: var(--subtle); line-height: 1.35; padding-top: .3mm; }
+.cl-arg { padding: 1.15mm 0; border-bottom: .3mm solid var(--line); }
+.cl-arg .n { font-family: var(--mono); font-size: 8.4pt; color: var(--c); padding-top: .4mm; }
+.cl-arg .t b { display: block; font-size: 10.2pt; font-weight: 600; color: var(--navy); line-height: 1.2; }
+.cl-arg .t span { display: block; font-size: 8.8pt; color: var(--muted); line-height: 1.24; margin-top: .2mm; }
+.cl-arg i { justify-self: center; width: 5mm; height: 5mm; border: .4mm solid var(--navy); border-radius: .8mm; margin-top: .2mm; }
+.cl-intro { display: flex; justify-content: space-between; align-items: flex-end; gap: 6mm; }
+.cl-intro h2 { margin-top: 1.5mm; }
+.cl-tail { display: flex; flex-direction: column; gap: 2mm; flex: 1; min-height: 0; padding-top: 4mm; }
+/* copertina del programma */
+.subjects { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5mm; }
+.subjects > div { border-top: .8mm solid var(--c); padding-top: 3mm; display: flex; flex-direction: column; gap: 1mm; }
+.subjects b { font-size: 13pt; color: var(--c); }
+.subjects span { font-size: 9.8pt; color: var(--muted); }
+.subjects .score { margin-top: 2mm; font-size: 11pt; }
+.boxes3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4mm; }
+.boxes3 > div { display: flex; flex-direction: column; gap: 1.2mm; font-size: 9.8pt; color: var(--ink-2); line-height: 1.32; }
+.boxes3 b { display: flex; align-items: center; gap: 2mm; color: var(--navy); font-size: 11pt; }
+.boxes3 b::before { content: ""; width: 5mm; height: 5mm; border: .4mm solid var(--navy); border-radius: .8mm; flex: none; }
+
+a.dl-btn { text-decoration: none; }
+</style>
+</head>
+<body>
+<!-- simbolo del Portale, riusato in ogni piede pagina -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <symbol id="pdfm" viewBox="5 3.5 54 54">
+      <path d="M21 51 A22 22 0 1 1 43 51" stroke="#D8B364" stroke-width="6" stroke-linecap="round" fill="none"/>
+      <circle cx="32" cy="22" r="4.2" fill="#3FD3DE"/>
+      <circle cx="24" cy="36" r="4.2" fill="#EF4C9B"/>
+      <circle cx="40" cy="36" r="4.2" fill="#F5C93B"/>
+    </symbol>
+  </defs>
+</svg>
+
+<nav class="bar" aria-label="Sezioni della pagina"><a href="#scarica">Scarica</a><a href="#studybook">Studybook</a><a href="#programma">Programma</a><span class="prog">Argomenti chiusi <b id="prog-total">0/125</b></span></nav>
+<header class="desk" id="scarica">
+  <div style="display:flex; flex-direction:column; gap:8px">
+    <p class="k"><a href="/" style="color:inherit;text-decoration:none">Portale dei Futuri Medici</a> · webinar 12 ottobre</p>
+    <h1>Studybook e Programma d'esame</h1>
+    <p class="s">Lo Studybook si usa durante la live di lunedì 12 ottobre alle 21 e il giorno dopo. Il Programma d'esame è il syllabus ufficiale 2026 di Fisica, Chimica e Biologia da spuntare argomento per argomento. Qui sotto li trovi tutti e due: puoi compilarli direttamente qui, oppure scaricare il PDF e stamparlo.</p>
+    <p class="jump"><a href="#studybook">Vai allo Studybook</a><a href="#programma">Vai al Programma d'esame</a></p>
+  </div>
+  <div class="dl-grid">
+    <a class="dl-btn" id="dl-sb-a4" href="Studybook-PdFM-12-ottobre-A4.pdf" download="Studybook-PdFM-12-ottobre-A4.pdf" type="application/pdf"><span class="lbl">Scarica Studybook A4</span><span class="meta">Una pagina per foglio A4, 12 pagine · 0,9 MB</span></a>
+    <a class="dl-btn primary" id="dl-sb-a5" href="Studybook-PdFM-12-ottobre-libretto-A5.pdf" download="Studybook-PdFM-12-ottobre-libretto-A5.pdf" type="application/pdf"><span class="lbl">Scarica Studybook A5</span><span class="meta">Libretto: 3 fogli A4 fronte-retro, piega e pinza · 1,4 MB</span></a>
+    <a class="dl-btn" id="dl-pr-a4" href="Programma-esame-PdFM-A4.pdf" download="Programma-esame-PdFM-A4.pdf" type="application/pdf"><span class="lbl">Scarica Programma A4</span><span class="meta">Una pagina per foglio A4, 12 pagine · 0,5 MB</span></a>
+    <a class="dl-btn primary" id="dl-pr-a5" href="Programma-esame-PdFM-libretto-A5.pdf" download="Programma-esame-PdFM-libretto-A5.pdf" type="application/pdf"><span class="lbl">Scarica Programma A5</span><span class="meta">Libretto: 3 fogli A4 fronte-retro, piega e pinza · 1,4 MB</span></a>
+  </div>
+  <p class="dl-status" id="dl-status" role="status" aria-live="polite"></p>
+  <div class="tut">
+    <div>
+      <h2>Come si scarica</h2>
+      <ol>
+        <li>Premi il pulsante del file che ti serve. Il libretto A5 è quello consigliato: 3 fogli in tutto.</li>
+                <li>Dal computer lo trovi nella cartella Download. Dal telefono, se il PDF si apre invece di scaricarsi, tocca il tasto di condivisione e scegli «Salva su File».</li>
+      </ol>
+      <p>La versione A4 è a grandezza piena, una pagina per foglio: si stampa normalmente, e in fronte-retro bastano 6 fogli.</p>
+    </div>
+    <div>
+      <h2>Come si stampa il libretto A5</h2>
+      <ol>
+        <li>Apri il PDF: sono 3 fogli, ognuno con un davanti e un dietro. Le pagine sembrano in disordine, ed è giusto così: tornano in ordine quando pieghi.</li>
+        <li>Stampa su carta A4, fronte-retro, con «capovolgi sul lato corto». Scala al 100% oppure «Adatta alla pagina». Non attivare «opuscolo» né «più pagine per foglio».</li>
+        <li>Impila i 3 fogli con sopra quello della copertina, rivolta verso di te, e piegali insieme a metà lasciando la copertina fuori.</li>
+        <li>Due graffette sulla piega e il libretto è pronto.</li>
+      </ol>
+      <p>Se la stampante non fa il fronte-retro da sola, stampa le pagine 1, 3 e 5 del PDF, rimetti i fogli nel cassetto e stampa la 2, la 4 e la 6. Prova prima con un foglio solo: ogni stampante vuole i fogli girati a modo suo.</p>
+    </div>
+  </div>
+  <div class="fillhere">
+    <p><b>Oppure compilalo qui.</b> Tocca le caselle per spuntarle, tocca una risposta per sceglierla e scrivi sulle righe. Nel Programma il conto degli argomenti chiusi si aggiorna da solo. Le risposte restano salvate in questo browser, su questo dispositivo.</p>
+    <button type="button" class="reset" id="reset">Cancella le mie risposte</button>
+  </div>
+</header>
+<main class="pages">
+<div class="doc-divider" id="studybook"><p class="k">Durante la live</p><h2>Studybook</h2><p class="s">12 pagine A5 che seguono le slide mossa per mossa, con il compito a casa e il ripasso del PAV in fondo.</p></div>
+<!-- ============ 01 COPERTINA ============ -->
+<section id="sb-p01" class="page cover">
+  <div class="content" style="gap:0">
+    <div class="top">
+      <div class="brand"><svg><use href="#pdfm"/></svg><div class="name">PORTALE DEI<br>FUTURI MEDICI<span>PdFM</span></div></div>
+      <p class="eyebrow">Webinar gratuito</p>
+    </div>
+
+    <svg class="notebook-art" viewBox="0 0 760 560" aria-hidden="true"><g fill="none" stroke="#c9d3e3" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M380 60 C300 20 170 20 60 60 L60 480 C170 440 300 440 380 480 C460 440 590 440 700 480 L700 60 C590 20 460 20 380 60 Z"/><path d="M380 60 L380 480"/><path d="M110 130 C180 112 250 112 330 130 M110 190 C180 172 250 172 330 190 M110 250 C180 232 250 232 330 250 M110 310 C180 292 250 292 330 310 M110 370 C180 352 250 352 330 370"/><path d="M430 130 C510 112 580 112 650 130 M430 190 C510 172 580 172 650 190 M430 250 C510 232 580 232 650 250"/></g><path d="M520 400 L700 330 L716 352 L540 424 Z" fill="none" stroke="#D8B364" stroke-width="7" stroke-linejoin="round"/></svg>
+
+    <div style="margin-top:44mm; display:flex; flex-direction:column; gap:6mm; width:120mm">
+      <p class="kicker">Il quaderno della serata</p>
+      <h1>Studybook</h1>
+      <p class="sub">Medicina in<br>modalità facile.</p>
+    </div>
+
+    <div class="when" style="margin-top:9mm"><span>Lunedì 12 ottobre</span><span>Ore 21:00</span><span>Su Zoom</span></div>
+
+    <div class="people" style="margin-top:14mm">
+      <div class="person"><b>Dr. Fabrizio Bucci</b><span>Medico</span></div>
+      <div class="person"><b>Matteo Piazzo</b><span>Memorizzazione</span></div>
+      <div class="person"><b>Luca Pelliccia</b><span>Studente di Medicina</span></div>
+    </div>
+
+    <div class="owner" style="margin-top:12mm"><span class="lbl">Questo quaderno è di</span><span class="ln"></span></div>
+
+    <div class="box soft howto" style="margin-top:12mm">
+      <h3>Come si usa</h3>
+      <ol>
+        <li><span>Stampalo prima della diretta, va benissimo anche in bianco e nero. Accanto tieni una penna.</span></li>
+        <li><span>Non hai fatto in tempo? Aprilo sul tablet e scrivici sopra. Oppure prendi un quaderno e segui le pagine da qui.</span></li>
+        <li><span>Va avanti insieme alle slide. Quando vedi <span class="tag live">Dal vivo</span> si lavora sul foglio, quando vedi <span class="tag chat">In chat</span> si risponde in chat.</span></li>
+        <li><span>Le pagine <span class="tag casa">A casa</span> e <span class="tag ripasso">Ripasso</span> sono per dopo la live: stasera saltale.</span></li>
+        <li><span>Su Zoom telecamera e microfono restano spenti: con noi parli in chat, e la leggiamo tutta.</span></li>
+      </ol>
+    </div>
+  </div>
+  <div class="foot"><span class="brand">PORTALE DEI FUTURI MEDICI</span><span class="num">01 / 12</span></div>
+</section>
+
+<!-- ============ 02 STASERA ============ -->
+<section id="sb-p02" class="page">
+  <div class="head"><p class="eyebrow"><b>Stasera</b> · prima di cominciare</p><span class="tag chat">In chat</span></div>
+  <div class="content">
+    <div style="display:flex; flex-direction:column; gap:3mm">
+      <h1>Stasera, in tre mosse.</h1>
+      <p class="lead">Prendiamo un argomento vero di Biologia del semestre filtro, la sintesi proteica, e lo smontiamo in diretta: prima lo capisci, poi lo fissi, alla fine vedi come te lo chiedono all'esame.</p>
+    </div>
+
+    <div>
+      <div class="mossa"><span class="n">1</span><div><b>Fabrizio · Capire prima di ricordare</b><span>L'argomento si scompone in domande da una riga. Pagine 3, 4 e 5.</span></div></div>
+      <div class="mossa"><span class="n">2</span><div><b>Matteo · Come sapere tutto per l'esame</b><span>14 parole in una storia sola, da guardare. Compito a casa: pagina 10.</span></div></div>
+      <div class="mossa"><span class="n">3</span><div><b>Luca · Studiare in velocità x10 con l'IA</b><span>Il programma fatto dall'IA, la prova, l'IA che ti interroga. Pagine 7 e 8.</span></div></div>
+      <div class="mossa"><span class="n" style="color:var(--rule)">+</span><div><b>Le tue domande</b><span>Poi, per chi vuole, raccontiamo cos'è il Portale.</span></div></div>
+    </div>
+
+    <div class="grid2">
+      <div class="box soft">
+        <p class="kicker">Cosa ti porti a casa</p>
+        <p><b style="color:var(--navy)">14 parole in una storia.</b> Le parole della sintesi proteica da scrivere esatte all'esame, da ritrovare domani a memoria.</p>
+        <p><b style="color:var(--navy)">La forma dell'esame.</b> Come sono fatte le 31 domande di ogni prova, e dove si nasconde la trappola.</p>
+      </div>
+      <div class="box gold">
+        <p class="kicker">Resta fino alla fine</p>
+        <p>A chi resta fino alle domande regaliamo tre cose: la mappa completa della sintesi proteica, il prompt di Luca e la checklist concentrazione.</p>
+        <p class="small">Facile da capire e da ricordare. L'esame resta un esame.</p>
+      </div>
+    </div>
+
+    <div class="box" style="gap:4mm">
+      <div style="display:flex; justify-content:space-between; align-items:center"><h3>Prima di cominciare</h3><span class="tag chat">Scrivilo in chat</span></div>
+      <div class="fill"><span class="lbl">Da dove ti colleghi?</span><span class="ln"></span></div>
+      <div class="fill" style="gap:6mm"><span class="lbl">La materia che ti spaventa di più</span>
+        <span class="subj"><span class="check"><b style="color:var(--fisica)">Fisica</b></span><span class="check"><b style="color:var(--chimica)">Chimica</b></span><span class="check"><b style="color:var(--biologia)">Biologia</b></span></span>
+      </div>
+      <p style="font-weight:600; color:var(--navy); margin-top:1mm">In quale problema ti riconosci di più? Cerchia il numero e scrivilo in chat.</p>
+      <div class="prob">
+        <div><span class="n">1</span><p>Non so da dove iniziare.</p></div>
+        <div><span class="n">2</span><p>Mi sembra di imparare a memoria.</p></div>
+        <div><span class="n">3</span><p>Studio tutto il giorno e non mi ricordo nulla.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">02 / 12</span></div>
+</section>
+
+<!-- ============ 03 MOSSA 1 · APERTURA ============ -->
+<section id="sb-p03" class="page">
+  <div class="head"><p class="eyebrow"><b>Mossa 1 · Fabrizio</b> · capire prima di ricordare</p></div>
+  <div class="content" style="gap:5mm">
+    <h1>Capire prima di ricordare.</h1>
+
+    <div class="box soft" style="gap:3mm">
+      <p class="kicker">La convinzione che ti fa perdere più ore</p>
+      <p class="quote big">«Se non mi entra, devo ripeterlo di più.»</p>
+      <div style="display:flex; justify-content:space-between; align-items:center">
+        <span class="check">L'ho pensato anch'io, questa settimana.</span>
+        <span class="tag chat">Scrivi «io»</span>
+      </div>
+    </div>
+
+    <div>
+      <h2 style="margin-bottom:3mm">Perché il metodo delle superiori qui non regge.</h2>
+      <div class="grid2">
+        <div class="box"><span class="statnum">10</span><p><b style="color:var(--navy)">Superiori.</b> Dieci pagine per interrogazione, un professore davanti. Leggere e ripetere funzionava.</p></div>
+        <div class="box"><span class="statnum">3</span><p><b style="color:var(--navy)">Semestre filtro.</b> Tre esami universitari in parallelo. Ripetere senza capire qui fa girare a vuoto.</p></div>
+      </div>
+    </div>
+
+    <div class="box dash" style="gap:3mm">
+      <h3>Tieni quello che hai studiato. E passalo al setaccio.</h3>
+      <p class="small">Quello che hai fatto da settembre non si butta. Dove regge, a posto. Dove crolla, sai cosa riprendere.</p>
+      <div class="fill"><span class="lbl" style="width:44mm">Un argomento che regge</span><span class="ln"></span></div>
+      <div class="fill"><span class="lbl" style="width:44mm">Un argomento che crolla</span><span class="ln"></span></div>
+    </div>
+
+    <div class="box" style="gap:3mm">
+      <div style="display:flex; justify-content:space-between; align-items:baseline"><h3>Cinque libri aperti ti fanno capire meno di uno solo.</h3></div>
+      <p class="small">Scegli una fonte per materia, quella che segue ordine e parole del programma. Le altre le apri solo per un dubbio preciso. Il segnale che ti manca un pezzo: rileggi la pagina e ti viene voglia di aprire un altro libro. Cambiare libro non te lo restituisce.</p>
+      <div class="fill"><span class="lbl" style="color:var(--fisica); width:24mm">Fisica</span><span class="ln"></span></div>
+      <div class="fill"><span class="lbl" style="color:var(--chimica); width:24mm">Chimica</span><span class="ln"></span></div>
+      <div class="fill"><span class="lbl" style="color:var(--biologia); width:24mm">Biologia</span><span class="ln"></span></div>
+    </div>
+
+    <div class="box navy" style="flex-direction:row; align-items:center; gap:6mm; padding:5mm 6mm">
+      <svg viewBox="0 0 120 90" style="width:26mm; flex:none" aria-hidden="true"><g fill="none" stroke-linecap="round"><path d="M60 45 L18 16 M60 45 L104 14 M60 45 L14 76 M60 45 L106 78 M60 45 L60 8" stroke="#D8B364" stroke-width="3"/></g><ellipse cx="60" cy="45" rx="20" ry="13" fill="#0C1D38" stroke="#D8B364" stroke-width="3"/><circle cx="18" cy="16" r="6" fill="#3FD3DE"/><circle cx="104" cy="14" r="6" fill="#EF4C9B"/><circle cx="14" cy="76" r="6" fill="#F5C93B"/><circle cx="106" cy="78" r="6" fill="#3FD3DE"/><circle cx="60" cy="8" r="6" fill="#F5C93B"/></svg>
+      <div style="display:flex; flex-direction:column; gap:1.5mm">
+        <p class="quote" style="color:#fff">«Dare struttura alle cose ti permette di ricordarle.»</p>
+        <p class="by" style="color:#8fa2c0">Fabrizio · le mappe del lockdown, Anatomia 2020</p>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">03 / 12</span></div>
+</section>
+
+<!-- ============ 04 MOSSA 1 · LA MAPPA ============ -->
+<section id="sb-p04" class="page">
+  <div class="head"><p class="eyebrow"><b>Mossa 1 · Fabrizio</b> · la tua mappa</p><span class="tag live">Dal vivo</span></div>
+  <div class="content" style="gap:4mm">
+    <div style="display:flex; flex-direction:column; gap:2mm">
+      <h2>Spezza il capitolo in domande da una riga.</h2>
+      <p class="small">Al centro c'è l'argomento di stasera. Parti dal riquadro oro, <b>a cosa serve</b>, poi segui i numeri: per ogni domanda una risposta di poche parole, mentre Fabrizio spiega. Lo spazio tra i riquadri serve per i collegamenti.</p>
+    </div>
+    <div class="map">
+      <svg class="wires" viewBox="0 0 180 214" preserveAspectRatio="none" aria-hidden="true">
+        <g stroke="#b9b4aa" stroke-width=".5" stroke-dasharray="1.6 1.2" fill="none">
+          <path d="M90 107 L28 33"/><path d="M90 107 L90 33"/><path d="M90 107 L152 33"/>
+          <path d="M90 107 L152 107"/><path d="M90 107 L152 181"/><path d="M90 107 L90 181"/><path d="M90 107 L28 181"/>
+        </g>
+        <path d="M90 107 L28 107" stroke="#D8B364" stroke-width=".9" fill="none"/>
+      </svg>
+      <div class="cells">
+        <div class="q"><div class="qh"><span class="badge">1</span><p>Dove stanno le istruzioni?</p></div><div class="lines"></div></div>
+        <div class="q"><div class="qh"><span class="badge">2</span><p>Chi le copia, e su cosa?</p></div><div class="lines"></div></div>
+        <div class="q"><div class="qh"><span class="badge">3</span><p>Dove va la copia?</p></div><div class="lines"></div></div>
+
+        <div class="q why"><span class="kicker">Si parte da qui</span><div class="qh"><span class="badge gold">?</span><p>Prima di ripetere: a cosa serve?</p></div><div class="lines"></div></div>
+        <div class="center"><div><span>L'argomento di stasera</span><b>La sintesi<br>proteica</b></div></div>
+        <div class="q"><div class="qh"><span class="badge">4</span><p>Chi la legge?</p></div><div class="lines"></div></div>
+
+        <div class="q"><div class="qh"><span class="badge">7</span><p>Quando si ferma?</p></div><div class="lines"></div></div>
+        <div class="q"><div class="qh"><span class="badge">6</span><p>Chi porta i mattoni?</p></div><div class="lines"></div></div>
+        <div class="q"><div class="qh"><span class="badge">5</span><p>Con quale codice?</p></div><div class="lines"></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">04 / 12</span></div>
+</section>
+
+<!-- ============ 05 MOSSA 1 · DOMANDA MAI VISTA ============ -->
+<section id="sb-p05" class="page">
+  <div class="head"><p class="eyebrow"><b>Mossa 1 · Fabrizio</b> · la prova del nove</p><span class="tag live">Dal vivo</span></div>
+  <div class="content">
+    <div style="display:flex; flex-direction:column; gap:2mm">
+      <p class="kicker">La domanda mai vista</p>
+      <h2>Chi ha capito ci arriva ragionando. Chi ha imparato a memoria si blocca.</h2>
+    </div>
+
+    <div class="box gold" style="gap:4mm; padding:6mm">
+      <p class="quote big">Se in un codone cambia una sola base, cosa può succedere alla proteina?</p>
+      <div style="display:flex; justify-content:space-between; align-items:center">
+        <p class="small">Scrivi la tua risposta <b>prima</b> che la dica Fabrizio. Poi mandala in chat.</p>
+        <span class="tag chat">Rispondi prima di Fabrizio</span>
+      </div>
+      <div class="lines" data-n="3"></div>
+    </div>
+
+    <div class="box" style="gap:3mm">
+      <h3>Le possibilità, come le spiega Fabrizio</h3>
+      <div class="fill"><span class="badge out" style="width:6mm;height:6mm;font-size:8.5pt">1</span><span class="ln"></span></div>
+      <div class="fill"><span class="badge out" style="width:6mm;height:6mm;font-size:8.5pt">2</span><span class="ln"></span></div>
+      <div class="fill"><span class="badge out" style="width:6mm;height:6mm;font-size:8.5pt">3</span><span class="ln"></span></div>
+    </div>
+
+    <div class="box soft" style="gap:3mm">
+      <p class="kicker">In cosa crede Fabrizio</p>
+      <div class="grid2" style="gap:3mm 6mm">
+        <p><b style="color:var(--navy)">Quello che capisci lo trattieni,</b> come una spugna. Anche sotto ansia, all'esame.</p>
+        <p><b style="color:var(--navy)">Prima la struttura, poi la memoria.</b> Quello che ha una forma, come una mappa, si ricorda.</p>
+        <p><b style="color:var(--navy)">Scomporre ai minimi termini.</b> Gli argomenti non diminuiscono, ma a pezzi piccoli entrano uno alla volta.</p>
+        <p><b style="color:var(--navy)">Il metodo si adatta alla testa.</b> Mai il contrario.</p>
+      </div>
+    </div>
+
+    <div class="box" style="gap:3mm">
+      <p class="quote">«Esiste la materia che si sta studiando. Ed esiste l'esame.»</p>
+      <div class="grid2">
+        <div style="border-top:.6mm solid var(--navy); padding-top:2mm"><b style="color:var(--navy)">La materia</b><p class="small">La spieghi a voce, come se la insegnassi.</p></div>
+        <div style="border-top:.6mm solid var(--oro); padding-top:2mm"><b style="color:var(--navy)">L'esame</b><p class="small">Rispondi come all'esame, nella forma in cui lo chiede.</p></div>
+      </div>
+      <p class="small">Nelle settimane prima dell'appello ogni argomento si ripassa in tutti e due i modi. L'esame te lo fa vedere Luca, a pagina 8.</p>
+    </div>
+  </div>
+  <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">05 / 12</span></div>
+</section>
+
+<!-- ============ 06 MOSSA 2 · APERTURA ============ -->
+<section id="sb-p06" class="page">
+  <div class="head"><p class="eyebrow"><b>Mossa 2 · Matteo</b> · come sapere tutto per l'esame</p></div>
+  <div class="content" style="gap:5mm">
+    <h1>Come sapere tutto per l'esame.</h1>
+
+    <div class="box soft" style="gap:3mm">
+      <div style="display:flex; justify-content:space-between; align-items:center"><p class="kicker">Quello che Matteo sente più spesso</p><span class="tag chat">Scrivi «io» se ne hai pensata una</span></div>
+      <div class="grid2" style="gap:2.6mm 6mm">
+        <span class="check"><b style="color:var(--navy)">«Io non ho memoria.»</b></span>
+        <span class="check"><b style="color:var(--navy)">«Ripeto e ripeto, ma non resta niente.»</b></span>
+        <span class="check"><b style="color:var(--navy)">«Le parole tecniche non mi entrano in testa.»</b></span>
+        <span class="check"><b style="color:var(--navy)">«All'esame mi si svuota la testa.»</b></span>
+      </div>
+    </div>
+
+    <div style="display:grid; grid-template-columns: 1fr 52mm; gap:6mm; align-items:center">
+      <div style="display:flex; flex-direction:column; gap:2mm">
+        <p class="quote big">«Il cervello ricorda molto meglio immagini e storie che parole astratte.»</p>
+        <p class="small">Le parole di Biologia diventano immagini, e le immagini una storia.</p>
+      </div>
+      <div class="box navy" style="align-items:flex-start; gap:1mm">
+        <span class="statnum" style="color:var(--oro)">1.811</span>
+        <p style="font-size:9.8pt; color:#C5CFDE; line-height:1.35">cifre di Pi greco senza errori. Campione italiano 2018. Non è un dono di natura: è un metodo, e si impara.</p>
+      </div>
+    </div>
+
+    <div class="box soft" style="gap:2.5mm">
+      <div style="display:flex; justify-content:space-between; align-items:baseline"><h3>Prima di memorizzare, si mette in ordine: la mappa mentale.</h3></div>
+      <div class="grid3" style="gap:5mm">
+        <p class="small"><b style="color:var(--navy)">Un capitolo intero</b> in una pagina sola.</p>
+        <p class="small"><b style="color:var(--navy)">Ogni informazione ha il suo posto</b>, e vedi cosa si collega a cosa.</p>
+        <p class="small"><b style="color:var(--navy)">Poche parole chiave</b> al posto di pagine di testo.</p>
+      </div>
+      <p class="small">La mappa completa della sintesi proteica te la regaliamo a fine serata. Un ramo, però, lo fissiamo in testa adesso.</p>
+    </div>
+
+    <div class="box gold" style="flex-direction:row; align-items:center; gap:6mm; padding:5mm 6mm">
+      <div style="display:flex; gap:5mm; flex:none">
+        <div style="text-align:center"><span class="statnum" style="font-size:26pt">3</span><p class="by">fasi</p></div>
+        <div style="text-align:center"><span class="statnum" style="font-size:26pt">14</span><p class="by">parole</p></div>
+        <div style="text-align:center"><span class="statnum" style="font-size:26pt">1</span><p class="by">storia</p></div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:1.5mm">
+        <h3>Stasera fissiamo un ramo della mappa: la traduzione.</h3>
+        <p class="small">Sono parole che all'esame vanno scritte esatte: 10 domande su 31 sono a completamento, e nessuno ti dà le opzioni.</p>
+      </div>
+    </div>
+
+    <div class="box navy" style="gap:4mm; padding:5mm 6mm">
+      <p class="kicker" style="color:var(--oro)">Stasera penna giù</p>
+      <p class="quote" style="color:#fff">La storia l'ha già costruita Matteo per te. Tu guarda le immagini, o chiudi gli occhi, e vedi la scena invece di leggerla.</p>
+      <div class="steps" style="grid-template-columns:1fr 1fr 1fr">
+        <div><span class="when">Stasera</span><b>Guardi la storia di Matteo</b><span>Niente da scrivere: solo seguirlo, scena dopo scena.</span></div>
+        <div><span class="when">Domani · pag. 10</span><b>La ritrovi a memoria</b><span>Scrivi le 14 parole senza riguardare niente.</span></div>
+        <div><span class="when">Ripasso · pag. 11</span><b>Come si usa il PAV</b><span>La tecnica in breve, per costruire le tue storie.</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">06 / 12</span></div>
+</section>
+
+<!-- ============ 07 MOSSA 3 · CONVINZIONE E PIANO ============ -->
+<section id="sb-p07" class="page">
+  <div class="head"><p class="eyebrow"><b>Mossa 3 · Luca</b> · studiare in velocità x10 con l'IA</p><span class="tag live">Dal vivo</span></div>
+  <div class="content" style="gap:5mm">
+    <h1>Studiare in velocità x10 con l'IA.</h1>
+
+    <div class="box soft" style="gap:2.5mm; padding:4mm 5mm">
+      <p class="kicker">La convinzione più comoda</p>
+      <div style="display:flex; justify-content:space-between; align-items:center">
+        <p class="quote big">«Non ho tempo.»</p>
+        <span class="tag chat">Scrivi «io»</span>
+      </div>
+      <div style="display:flex; justify-content:space-between; align-items:center">
+        <span class="check">Me lo sono detto anch'io, questa settimana.</span>
+        <p class="small">Tre esami in parallelo, 59 giorni al primo appello.</p>
+      </div>
+    </div>
+
+    <div class="box navy" style="flex-direction:row; align-items:center; gap:7mm; padding:4.5mm 6mm">
+      <div style="flex:none; display:flex; align-items:baseline; gap:2mm"><span class="statnum" style="color:var(--oro)">200</span><span style="font-size:9.8pt; color:#C5CFDE; line-height:1.25">flashcard fatte bene<br>su una materia</span></div>
+      <div style="flex:none; display:flex; gap:6mm">
+        <div><p class="by" style="color:#8fa2c0">Prima</p><p style="font-size:16pt; font-weight:700">6 mesi</p></div>
+        <div><p class="by" style="color:#8fa2c0">Con l'IA</p><p style="font-size:16pt; font-weight:700; color:var(--oro)">3 giorni</p></div>
+      </div>
+      <p style="font-size:9.8pt; color:#C5CFDE; line-height:1.35">Non per farsi fare i riassunti. Usata in modo sano, l'IA organizza la giornata e prepara gli strumenti di studio.</p>
+    </div>
+
+    <div style="display:flex; flex-direction:column; gap:2mm">
+      <h2>Il raccoglitore dell'esame.</h2>
+      <p class="small">Il programma non si scrive a mano. Si raccoglie l'essenziale, lo si dà all'IA e lei lo trasforma in un programma settimana per settimana, dall'appello a stasera. Luca lo fa dal vivo: tu intanto raccogli qui i tuoi dati.</p>
+    </div>
+
+    <div class="box soft" style="flex-direction:row; align-items:center; gap:6mm; padding:3.5mm 5mm">
+      <p class="kicker" style="flex:none">L'esame</p>
+      <p style="font-size:10pt"><b style="color:var(--navy)">Primo appello 10 dicembre.</b> Ogni prova: 31 domande, 21 a risposta multipla e 10 a completamento, in 50 minuti.</p>
+    </div>
+
+    <table class="plan collect">
+      <tr><th class="w">Per ogni materia</th><th class="f">Fisica</th><th class="c">Chimica</th><th class="b">Biologia</th></tr>
+      <tr><td class="w"><b>Il programma ufficiale</b>ce l'hai? da dove</td><td></td><td></td><td></td></tr>
+      <tr><td class="w"><b>La tua fonte</b>una sola, pagina 3</td><td></td><td></td><td></td></tr>
+      <tr><td class="w"><b>Già fatto</b>gli argomenti che reggono</td><td></td><td></td><td></td></tr>
+      <tr><td class="w"><b>Da riprendere</b>gli argomenti che crollano</td><td></td><td></td><td></td></tr>
+    </table>
+
+    <div class="box" style="gap:3mm">
+      <p class="kicker">Il tuo tempo e i tuoi materiali</p>
+      <div class="fill"><span class="lbl" style="width:56mm">Ore di studio al giorno</span><span class="ln"></span></div>
+      <div class="fill"><span class="lbl" style="width:56mm">Impegni fissi della settimana</span><span class="ln"></span></div>
+      <div class="fill" style="gap:0"><span class="lbl" style="width:56mm">Cosa darai all'IA</span><span class="subj"><span class="check">Appunti</span><span class="check">Slide dei docenti</span><span class="check">Libro</span></span></div>
+    </div>
+  </div>
+  <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">07 / 12</span></div>
+</section>
+
+<!-- ============ 08 MOSSA 3 · LA PROVA E L'IA ============ -->
+<section id="sb-p08" class="page">
+  <div class="head"><p class="eyebrow"><b>Mossa 3 · Luca</b> · la prova e l'insegnante automatico</p><span class="tag live">Dal vivo</span></div>
+  <div class="content" style="gap:5mm">
+    <div class="box" style="gap:3.5mm">
+      <div style="display:flex; justify-content:space-between; align-items:baseline"><h2>Ogni prova: 31 domande.</h2><p class="by">50 minuti · meno di 100 secondi a domanda</p></div>
+      <div class="squares">
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        <i class="c c1"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i>
+      </div>
+      <div class="legend"><span><i></i><b>21</b> a risposta multipla</span><span><i class="c"></i><b>10</b> a completamento, senza opzioni</span></div>
+      <p class="small">Dentro la stessa prova ci sono due prove diverse, e si allenano in due modi diversi.</p>
+    </div>
+
+    <div class="grid2">
+      <div class="box" style="gap:3mm">
+        <div style="display:flex; justify-content:space-between; align-items:center"><p class="kicker">Dove ti frega una multipla</p><span class="tag chat">La lettera</span></div>
+        <h3>Dove avviene la traduzione?</h3>
+        <div class="opts">
+          <div class="opt"><span class="l">A</span>Nel nucleo</div>
+          <div class="opt"><span class="l">B</span>Sui ribosomi</div>
+          <div class="opt"><span class="l">C</span>Nel nucleolo</div>
+          <div class="opt"><span class="l">D</span>Nell'apparato di Golgi</div>
+          <div class="opt"><span class="l">E</span>Nei lisosomi</div>
+        </div>
+        <div class="fill" style="margin-top:1mm"><span class="lbl" style="font-weight:500">La trappola era la</span><span class="ln" style="flex:none; width:10mm"></span><span class="lbl" style="font-weight:500">perché</span><span class="ln"></span></div>
+        <div class="fill"><span class="ln"></span></div>
+      </div>
+      <div class="box navy" style="gap:3mm">
+        <p class="kicker" style="color:var(--oro)">Dove se ne va il tempo</p>
+        <p><b>Dove si perde.</b> Sui conti e sulle domande in bilico.</p>
+        <p><b>Cosa lasciare per ultimo.</b> Le lunghe e quelle in bilico. Al primo giro rispondi solo a quello che sai subito.</p>
+        <p style="margin-top:auto; color:var(--oro); font-weight:600">Si allena con le simulazioni a tempo. Il giorno prima è tardi.</p>
+      </div>
+    </div>
+
+    <div class="box gold" style="gap:3mm">
+      <div style="display:flex; justify-content:space-between; align-items:center"><h3>L'insegnante automatico: l'IA ti interroga a voce.</h3><span class="tag live">Dal vivo</span></div>
+      <p class="small">Luca dà all'IA il raccoglitore e gli appunti di stasera, poi apre la modalità vocale e si fa interrogare: una domanda alla volta, e l'IA aspetta la risposta prima di andare avanti. Il prompt apposito è uno dei regali di fine serata.</p>
+      <div style="display:flex; justify-content:flex-end; gap:4mm; align-items:center"><span class="tag chat">L'hai già usata così?</span><span class="check">Sì</span><span class="check">No</span></div>
+    </div>
+
+    <div style="display:flex; flex-direction:column; gap:2mm; flex:1; min-height:0">
+      <p class="kicker">Appunti della Mossa 3</p>
+      <div class="notes"></div>
+    </div>
+  </div>
+  <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">08 / 12</span></div>
+</section>
+
+<!-- ============ 09 FINE SERATA ============ -->
+<section id="sb-p09" class="page">
+  <div class="head"><p class="eyebrow"><b>Stasera</b> · prima di chiudere Zoom</p><span class="tag chat">In chat</span></div>
+  <div class="content">
+    <h1>Guarda il tuo quaderno.</h1>
+
+    <div class="box" style="gap:3mm">
+      <p class="kicker">In un'ora e un quarto</p>
+      <div class="checks">
+        <span class="check">Hai capito un argomento partendo dal perché.</span>
+        <span class="check">Hai visto 14 parole tecniche diventare una storia sola.</span>
+        <span class="check">Hai risposto a una domanda mai vista.</span>
+        <span class="check">Hai visto com'è fatta la prova, trappole comprese.</span>
+        <span class="check">Hai visto l'IA costruire il programma e interrogare a voce.</span>
+      </div>
+      <div class="fill" style="margin-top:2mm"><span class="lbl">Una parola su com'è andata</span><span class="ln"></span><span class="tag chat">Scrivila in chat</span></div>
+    </div>
+
+    <div class="box gold" style="gap:3mm">
+      <div style="display:flex; justify-content:space-between; align-items:center"><h3>I regali di fine serata</h3><p class="by">arrivano in chat durante le domande</p></div>
+      <div class="checks">
+        <span class="check"><span><b style="color:var(--navy)">La mappa completa della sintesi proteica</b>, preparata da Matteo.</span></span>
+        <span class="check"><span><b style="color:var(--navy)">Il prompt di Luca</b>, per farti interrogare a voce dall'IA.</span></span>
+        <span class="check"><span><b style="color:var(--navy)">La checklist concentrazione</b>, di Matteo.</span></span>
+      </div>
+      <p class="small">Salvali prima di chiudere Zoom: la mappa ti serve domani per il compito di pagina 10.</p>
+    </div>
+
+    <div>
+      <h2 style="margin-bottom:3mm">Da domani, due strade.</h2>
+      <div class="grid2">
+        <div class="box"><h3>Da solo</h3><p class="small">Applichi quello che hai visto stasera, argomento per argomento, fino all'appello. Si può fare, ed è il motivo per cui stasera ti abbiamo mostrato tutto.</p></div>
+        <div class="box"><h3>Con noi accanto</h3><p class="small">Qualcuno che ti costruisce il piano, ti spiega, ti corregge le mappe e ti interroga, fino all'appello. Per saperne di più scrivi «portale» in chat.</p></div>
+      </div>
+    </div>
+
+    <div style="border-top:.8mm solid var(--oro); padding-top:3mm; display:flex; flex-direction:column; gap:1mm">
+      <p style="font-weight:600; color:var(--navy); font-size:11.5pt; line-height:1.35">Fra dieci anni i futuri medici di oggi saranno medici. Ci piacerebbe che fossero medici che le conoscenze le hanno fatte diventare competenze, da portare in corsia per tutta la vita.</p>
+      <p class="by">Fabrizio, Matteo e Luca</p>
+    </div>
+
+    <div class="box navy" style="flex-direction:row; align-items:center; justify-content:space-between; gap:6mm; padding:5mm 6mm">
+      <div style="display:flex; flex-direction:column; gap:1mm">
+        <p class="quote" style="color:#fff">Hai fatto la mappa di pagina 4?</p>
+        <p style="color:#C5CFDE; font-size:10pt">Mandaci la foto del quaderno su WhatsApp. Le più belle le ripubblichiamo, anche senza nome.</p>
+      </div>
+      <svg style="width:16mm; flex:none" viewBox="0 0 32 30" aria-hidden="true"><path d="M4 2h24a3 3 0 0 1 3 3v15a3 3 0 0 1-3 3H13l-7 6v-6H4a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3z" fill="#D8B364"/></svg>
+    </div>
+  </div>
+  <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">09 / 12</span></div>
+</section>
+
+<!-- ============ 10 COMPITI · DOMANI · LA STORIA DI MATTEO ============ -->
+<section id="sb-p10" class="page">
+  <div class="head"><p class="eyebrow"><b>Compito · domani</b> · prima di aprire il libro</p><span class="tag casa">A casa</span></div>
+  <div class="content" style="gap:5mm">
+    <div style="display:flex; flex-direction:column; gap:2.5mm">
+      <h1>Ritrova la storia di Matteo.</h1>
+      <p class="lead">Ieri sera l'hai solo guardata. Oggi scopri quanto ti è rimasto: senza riguardare le slide né la mappa, chiudi gli occhi e ripercorri la storia dalla prima immagine all'ultima. Ogni immagine ti restituisce la sua parola: scrivila nel riquadro. Le parole sono 14, il riquadro 06 ne contiene tre.</p>
+    </div>
+
+    <div class="box" style="gap:4.5mm; padding:6mm">
+      <div class="chain">
+        <div class="grp"><span class="g">Da dove<br>parte tutto</span><div class="slots"><div class="slot" data-n="01"></div></div></div>
+        <div class="grp"><span class="g">Scena 1</span><div class="slots"><div class="slot" data-n="02"></div><div class="slot" data-n="03"></div><div class="slot" data-n="04"></div></div></div>
+        <div class="grp"><span class="g">Scena 2</span><div class="slots"><div class="slot" data-n="05"></div><div class="slot wide" data-n="06 · tre parole"></div></div></div>
+        <div class="grp"><span class="g">Scena 3</span><div class="slots"><div class="slot" data-n="07"></div><div class="slot" data-n="08"></div><div class="slot" data-n="09"></div></div></div>
+        <div class="grp"><span class="g"></span><div class="slots"><div class="slot" data-n="10"></div><div class="slot wide" data-n="11"></div><div class="slot" data-n="12"></div></div></div>
+      </div>
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; border-top:.3mm solid var(--line); padding-top:4mm">
+        <p class="small" style="max-width:110mm">Controlla con la mappa completa che ti abbiamo regalato a fine live. Quello che manca, rivedilo nella sua scena: non ripeterlo dieci volte.</p>
+        <div class="score">Ritrovate<span class="ln"></span>/ 14</div>
+      </div>
+    </div>
+
+    <div class="box soft" style="gap:3mm">
+      <h3>Le parole che ti sono sfuggite</h3>
+      <p class="small">Se una parola non è tornata, la sua immagine ha saltato almeno uno dei tre controlli PAV: non era abbastanza assurda, non si muoveva, non era viva. Scrivi qui le parole mancanti e, accanto, come renderle più forti. I tre controlli li ripassi alla pagina dopo.</p>
+      <div class="lines" data-n="4"></div>
+    </div>
+
+    <div style="display:flex; flex-direction:column; gap:2mm; flex:1; min-height:0">
+      <p class="kicker">Appunti</p>
+      <div class="notes"></div>
+    </div>
+  </div>
+  <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">10 / 12</span></div>
+</section>
+
+<!-- ============ 11 RIPASSO · COME SI USA IL PAV ============ -->
+<section id="sb-p11" class="page">
+  <div class="head"><p class="eyebrow"><b>Ripasso · Matteo</b> · la tecnica PAV</p><span class="tag ripasso">Ripasso</span></div>
+  <div class="content" style="gap:5mm">
+    <div style="display:flex; flex-direction:column; gap:2.5mm">
+      <h1>Come si usa il PAV.</h1>
+      <p class="lead">La storia di Matteo funziona, ma una costruita da te resta di più: le immagini le scegli tu, con le cose che conosci tu. Qui trovi la tecnica PAV in breve, da ripassare ogni volta che ne costruisci una tua.</p>
+    </div>
+
+    <div style="display:flex; flex-direction:column; gap:3mm">
+      <div style="display:flex; justify-content:space-between; align-items:baseline"><h2>PAV: tre controlli su ogni immagine.</h2><p class="by">se ne salta uno, l'immagine non resta</p></div>
+      <div class="pav">
+        <div><span class="L">P</span><b>Paradosso</b><p>Una cosa che non può succedere. Lo strano non basta, serve l'impossibile: un idrante in mezzo alla strada non resta, un idrante che si sbullona da solo e spara i bulloni in aria sì.</p></div>
+        <div><span class="L">A</span><b>Azione</b><p>L'immagine si muove e va a colpire quella dopo. Una banana vicino a una bottiglia si perde in dieci minuti, una banana che schizza fuori dalla bottiglia come un proiettile resta.</p></div>
+        <div><span class="L">V</span><b>Vivido</b><p>Tutti e cinque i sensi. Che colore ha, che rumore fa, che odore ha, com'è al tatto: unto, appiccicoso, bollente.</p></div>
+      </div>
+    </div>
+
+    <div class="box gold" style="gap:2.5mm">
+      <h3>Il dato sta dentro l'immagine, non accanto.</h3>
+      <p class="small">Il litio non si ricorda pensando «litio come litigio»: quello è un gancio, e i ganci si staccano. Si ricorda vedendo due persone che litigano faccia a faccia, così arrabbiate da prendere fuoco, con una fiamma rosso acceso. Il litio brucia di rosso, e il dato è già nella scena.</p>
+    </div>
+
+    <div style="display:flex; flex-direction:column; gap:3mm">
+      <h2>Il procedimento, in quattro passaggi.</h2>
+      <div class="steps" style="grid-template-columns:repeat(4, 1fr)">
+        <div><span class="when">Passo 1</span><b>Scegli le parole</b><span>Un ramo della tua mappa: le parole che all'esame vanno scritte esatte, come le 14 di Matteo.</span></div>
+        <div><span class="when">Passo 2</span><b>Parola → immagine</b><span>Ogni parola diventa una cosa che sapresti disegnare, e passa i tre controlli.</span></div>
+        <div><span class="when">Passo 3</span><b>Immagini → storia</b><span>Le immagini si legano in fila: ognuna fa succedere qualcosa alla successiva.</span></div>
+        <div><span class="when">Passo 4</span><b>Storia → parole</b><span>La ripercorri senza guardare e riscrivi le parole. Quelle che mancano, rinforzale con i tre controlli.</span></div>
+      </div>
+    </div>
+
+    <div style="display:flex; flex-direction:column; gap:2.5mm">
+      <p class="kicker">Perché funziona</p>
+      <div class="why4">
+        <div><b>Il cervello ricorda ciò che vede.</b>Una parola astratta scivola via, un'immagine concreta resta.</div>
+        <div><b>Il nuovo si aggancia al noto.</b>La parola nuova si appoggia a una che conosci già.</div>
+        <div><b>Le storie hanno un ordine.</b>Dalla prima immagine ritrovi tutte le altre.</div>
+        <div><b>Lo strano non si dimentica.</b>Una scena assurda resta, una lista di sigle no.</div>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">11 / 12</span></div>
+</section>
+
+<!-- ============ 12 APPUNTI ============ -->
+<section id="sb-p12" class="page">
+  <div class="head"><p class="eyebrow"><b>Appunti</b> · tutto quello che non sta altrove</p></div>
+  <div class="content">
+    <div class="notes"></div>
+  </div>
+  <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">12 / 12</span></div>
+</section>
+
+<div class="doc-divider" id="programma"><p class="k">Dopo la live</p><h2>Programma d'esame</h2><p class="s">12 pagine A5: i 125 argomenti del syllabus ufficiale 2026, con tre caselle ciascuno.</p></div>
+<!-- ============ PROGRAMMA · 01 COPERTINA ============ -->
+<section id="pr-p01" class="page cover">
+  <div class="content" style="gap:0">
+    <div class="top">
+      <div class="brand"><svg><use href="#pdfm"/></svg><div class="name">PORTALE DEI<br>FUTURI MEDICI<span>PdFM</span></div></div>
+      <p class="eyebrow">Semestre filtro 2026/27</p>
+    </div>
+
+    <div style="margin-top:20mm; display:flex; flex-direction:column; gap:5mm">
+      <p class="kicker">Fisica · Chimica · Biologia</p>
+      <h1>Programma<br>d'esame</h1>
+      <p class="sub">Tutto il syllabus ufficiale,<br>argomento per argomento.</p>
+    </div>
+
+    <div class="when" style="margin-top:9mm"><span>Primo appello 10 dicembre</span><span>31 domande</span><span>50 minuti</span></div>
+    <p class="small" style="margin-top:3mm">Ogni prova: 21 domande a risposta multipla e 10 a completamento, senza opzioni.</p>
+
+    <div class="subjects" style="margin-top:10mm">
+      <div style="--c:var(--fisica)"><b>Fisica</b><span>7 unità · 6 CFU · 38 argomenti</span><div class="score" data-score="fisica">Chiusi<span class="ln"></span>/ 38</div></div>
+<div style="--c:var(--chimica)"><b>Chimica</b><span>7 unità · 6 CFU · 46 argomenti</span><div class="score" data-score="chimica">Chiusi<span class="ln"></span>/ 46</div></div>
+<div style="--c:var(--biologia)"><b>Biologia</b><span>7 unità · 6 CFU · 41 argomenti</span><div class="score" data-score="biologia">Chiusi<span class="ln"></span>/ 41</div></div>
+    </div>
+
+    <div class="owner" style="margin-top:10mm"><span class="lbl">Questo programma è di</span><span class="ln"></span></div>
+
+    <div class="box soft" style="margin-top:9mm; gap:3mm">
+      <h3>Come si usa</h3>
+      <p class="small">Ogni riga è un argomento del syllabus ufficiale 2026, con le voci che il documento elenca. Accanto ci sono tre caselle, una per ogni passaggio: la spunta la metti solo quando il passaggio regge senza guardare.</p>
+      <div class="boxes3">
+        <div><b>Capito</b>Lo spieghi a voce senza guardare, come se lo insegnassi.</div>
+        <div><b>Fissato</b>Scrivi a memoria le parole esatte, quelle da completamento.</div>
+        <div><b>Allenato</b>Hai risposto a domande a tempo, nella forma della prova.</div>
+      </div>
+      <p class="small">Un argomento è chiuso quando ha tutte e tre le spunte. Il conto dei chiusi lo tieni qui sopra e in cima a ogni materia.</p>
+    </div>
+  </div>
+  <div class="foot"><span class="brand">PORTALE DEI FUTURI MEDICI</span><span class="num">01 / 12</span></div>
+</section>
+
+<section id="pr-p02" class="page" style="--c:var(--fisica)">
+  <div class="head"><p class="eyebrow"><b>Programma · Fisica</b> · syllabus ufficiale 2026</p></div>
+  <div class="content" style="gap:4mm">
+    <div class="cl-intro">
+      <div><p class="kicker" style="color:var(--c)">Programma ufficiale · syllabus 2026</p><h2>Fisica, argomento per argomento.</h2></div>
+      <div class="score" style="flex:none" data-score="fisica">Chiusi<span class="ln"></span>/ 38</div>
+    </div>
+    <p class="small">Il syllabus ufficiale 2026 di Fisica, voce per voce: 7 unità, 6 CFU, 38 argomenti. Accanto a ogni unità c'è la quota minima di esercitazioni, perché in Fisica gli esercizi numerici fanno parte del programma quanto la teoria.</p>
+    <div class="cl">
+      <div class="cl-cols"><span></span><span>Argomento · cosa contiene</span><span>Capito</span><span>Fissato</span><span>Allenato</span></div>
+      <div class="cl-ud"><span class="n">UD1</span><b>Introduzione ai metodi della fisica</b><span class="cfu">0,2 CFU<br>almeno 20% esercitazioni</span></div>
+      <div class="cl-arg" data-k="fisica-1.1"><span class="n">1.1</span><div class="t"><b>Notazione scientifica</b></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="fisica-1.2"><span class="n">1.2</span><div class="t"><b>Grandezze fisiche e unità di misura</b><span>Dimensioni e unità di misura, Sistema Internazionale, conversioni, stima dell'ordine di grandezza, grandezze estensive e intensive, scalari e vettoriali</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="fisica-1.3"><span class="n">1.3</span><div class="t"><b>Funzioni trigonometriche elementari</b></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="fisica-1.4"><span class="n">1.4</span><div class="t"><b>Vettori</b><span>Definizione, componenti, somma, differenza, prodotto scalare, prodotto vettoriale</span></div><i></i><i></i><i></i></div>
+      <div class="cl-ud"><span class="n">UD2</span><b>Meccanica</b><span class="cfu">1,4 CFU<br>almeno 25% esercitazioni</span></div>
+      <div class="cl-arg" data-k="fisica-2.1"><span class="n">2.1</span><div class="t"><b>Cinematica del punto materiale</b><span>Posizione e spostamento, traiettoria e legge oraria, velocità e accelerazione medie e istantanee, moto rettilineo uniforme, uniformemente accelerato, caduta libera, moto parabolico, moto circolare uniforme e accelerazione centripeta</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="fisica-2.2"><span class="n">2.2</span><div class="t"><b>Dinamica del punto materiale</b><span>I tre principi: inerzia ed equilibrio statico, forza risultante e accelerazione, azione e reazione; equilibrio traslazionale; forza peso, gravitazionale, di contatto, attrito statico e dinamico, tensione, forze elastiche e legge di Hooke</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="fisica-2.3"><span class="n">2.3</span><div class="t"><b>Lavoro ed energia</b><span>Lavoro, potenza, teorema dell'energia cinetica, forze conservative e non conservative, energia potenziale gravitazionale ed elastica, energia meccanica e sua conservazione nei sistemi ideali</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="fisica-2.4"><span class="n">2.4</span><div class="t"><b>Quantità di moto</b><span>Quantità di moto, impulso, conservazione nei sistemi isolati</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="fisica-2.5"><span class="n">2.5</span><div class="t"><b>Sistemi di corpi</b><span>Centro di massa e suo moto, corpo rigido, momento torcente ed equilibrio rotazionale, leve nel corpo umano</span></div><i></i><i></i><i></i></div>
+      <div class="cl-ud"><span class="n">UD3</span><b>Meccanica dei fluidi</b><span class="cfu">1,2 CFU<br>almeno 25% esercitazioni</span></div>
+      <div class="cl-arg" data-k="fisica-3.1"><span class="n">3.1</span><div class="t"><b>Stati di aggregazione della materia</b><span>Fluidi e solidi a confronto, pressione e densità</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="fisica-3.2"><span class="n">3.2</span><div class="t"><b>Leggi dell'idrostatica</b><span>Legge di Stevino, principio di Pascal, principio di Archimede e galleggiamento, misura della pressione: esperimento di Torricelli, manometro</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="fisica-3.3"><span class="n">3.3</span><div class="t"><b>Fluidi in movimento (idrodinamica)</b><span>Flusso e portata, moto stazionario, laminare e turbolento, equazione di continuità, teorema di Bernoulli, applicazioni alla circolazione: stenosi e aneurisma</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="fisica-3.4"><span class="n">3.4</span><div class="t"><b>Fluidi reali e viscosità</b><span>Moto laminare, profilo parabolico della velocità, gradiente di velocità, legge di Poiseuille, resistenze idrauliche in serie e in parallelo</span></div><i></i><i></i><i></i></div>
+      
+    </div>
+  </div>
+  <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">02 / 12</span></div>
+</section>
+
+<section id="pr-p03" class="page" style="--c:var(--fisica)">
+  <div class="head"><p class="eyebrow"><b>Programma · Fisica</b> · segue</p></div>
+  <div class="content" style="gap:4mm">
+    
+    <div class="cl">
+      <div class="cl-cols"><span></span><span>Argomento · cosa contiene</span><span>Capito</span><span>Fissato</span><span>Allenato</span></div>
+      <div class="cl-ud"><span class="n">UD3</span><b>Meccanica dei fluidi</b><span class="cfu">segue</span></div>
+      <div class="cl-arg" data-k="fisica-3.5"><span class="n">3.5</span><div class="t"><b>Fenomeni di superficie</b><span>Tensione superficiale, capillarità, interfacce piane e curve, pressione di curvatura e legge di Laplace</span></div><i></i><i></i><i></i></div>
+      <div class="cl-ud"><span class="n">UD4</span><b>Onde meccaniche</b><span class="cfu">0,4 CFU<br>almeno 20% esercitazioni</span></div>
+      <div class="cl-arg" data-k="fisica-4.1"><span class="n">4.1</span><div class="t"><b>Onde meccaniche</b><span>Propagazione di energia in un mezzo, oscillatore armonico, frequenza, periodo, pulsazione e lunghezza d'onda, velocità di propagazione, equazione delle onde armoniche, onde trasversali su una corda e longitudinali (suono)</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="fisica-4.2"><span class="n">4.2</span><div class="t"><b>Sovrapposizione e interferenza</b><span>Principio di sovrapposizione, interferenza</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="fisica-4.3"><span class="n">4.3</span><div class="t"><b>Energia trasportata dalle onde</b><span>Energia, potenza, intensità, legge dell'inverso del quadrato della distanza</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="fisica-4.4"><span class="n">4.4</span><div class="t"><b>Onde acustiche</b><span>Velocità del suono nei diversi mezzi, intensità acustica e percezione sonora, livello di intensità in decibel</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="fisica-4.5"><span class="n">4.5</span><div class="t"><b>Effetto Doppler</b><span>Descrizione qualitativa</span></div><i></i><i></i><i></i></div>
+      <div class="cl-ud"><span class="n">UD5</span><b>Termodinamica</b><span class="cfu">1,0 CFU<br>almeno 30% esercitazioni</span></div>
+      <div class="cl-arg" data-k="fisica-5.1"><span class="n">5.1</span><div class="t"><b>Concetti fondamentali</b><span>Sistema e ambiente, variabili termodinamiche (pressione, volume, temperatura) e stato, funzioni di stato, scale di temperatura, gas perfetti ed equazione di stato</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="fisica-5.2"><span class="n">5.2</span><div class="t"><b>Calore e capacità termica</b><span>Scambi di calore, capacità termica e calore specifico (gas ideali), fusione, evaporazione, condensazione, calore latente, calorimetria</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="fisica-5.3"><span class="n">5.3</span><div class="t"><b>Meccanismi di trasmissione del calore</b><span>Conduzione, convezione, irraggiamento</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="fisica-5.4"><span class="n">5.4</span><div class="t"><b>Primo principio della termodinamica</b><span>Energia interna, calore e lavoro, trasformazioni reversibili e irreversibili, isoterma, isocora, isobara, adiabatica</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="fisica-5.5"><span class="n">5.5</span><div class="t"><b>Secondo principio della termodinamica</b><span>Enunciati e irreversibilità, cicli termodinamici, macchine termiche e rendimento, ciclo di Carnot, entropia come funzione di stato e interpretazione statistica, direzione dei processi</span></div><i></i><i></i><i></i></div>
+      <div class="cl-ud"><span class="n">UD6</span><b>Elettricità e magnetismo</b><span class="cfu">1,2 CFU<br>almeno 30% esercitazioni</span></div>
+      <div class="cl-arg" data-k="fisica-6.1"><span class="n">6.1</span><div class="t"><b>Carica elettrica e interazioni</b><span>Carica, unità di misura e conservazione, legge di Coulomb, campo elettrico e linee di forza, campo di una o più cariche puntiformi, moto di una carica in un campo uniforme</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="fisica-6.2"><span class="n">6.2</span><div class="t"><b>Energia e potenziale elettrico</b><span>Energia potenziale di una distribuzione di cariche, potenziale e differenza di potenziale, conservazione dell'energia</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="fisica-6.3"><span class="n">6.3</span><div class="t"><b>Conduttori e dielettrici (isolanti)</b><span>Induzione elettrostatica e polarizzazione, in modo qualitativo</span></div><i></i><i></i><i></i></div>
+      
+    </div>
+  </div>
+  <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">03 / 12</span></div>
+</section>
+
+<section id="pr-p04" class="page" style="--c:var(--fisica)">
+  <div class="head"><p class="eyebrow"><b>Programma · Fisica</b> · segue</p></div>
+  <div class="content" style="gap:4mm">
+    
+    <div class="cl">
+      <div class="cl-cols"><span></span><span>Argomento · cosa contiene</span><span>Capito</span><span>Fissato</span><span>Allenato</span></div>
+      <div class="cl-ud"><span class="n">UD6</span><b>Elettricità e magnetismo</b><span class="cfu">segue</span></div>
+      <div class="cl-arg" data-k="fisica-6.4"><span class="n">6.4</span><div class="t"><b>Corrente elettrica</b><span>Corrente continua e intensità, generatore ideale e differenza di potenziale, conduttori ohmici, leggi di Ohm, resistenza e resistività, effetto Joule, resistenze in serie e in parallelo</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="fisica-6.5"><span class="n">6.5</span><div class="t"><b>Capacità e condensatori</b><span>Capacità, condensatore piano, effetto del dielettrico, energia immagazzinata, condensatori in serie e in parallelo</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="fisica-6.6"><span class="n">6.6</span><div class="t"><b>Campo magnetico</b><span>Origine dalle correnti (esperimento di Oersted), forza di Lorentz su una carica in moto e su un filo, moto circolare in un campo uniforme</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="fisica-6.7"><span class="n">6.7</span><div class="t"><b>Induzione elettromagnetica</b><span>Flusso magnetico e forza elettromotrice, legge di Faraday-Neumann-Lenz, correnti indotte e loro verso</span></div><i></i><i></i><i></i></div>
+      <div class="cl-ud"><span class="n">UD7</span><b>Fisica delle radiazioni</b><span class="cfu">0,6 CFU<br>almeno 20% esercitazioni</span></div>
+      <div class="cl-arg" data-k="fisica-7.1"><span class="n">7.1</span><div class="t"><b>Radiazione elettromagnetica</b><span>Campi elettrico e magnetico oscillanti perpendicolari, lunghezza d'onda, frequenza, velocità di propagazione, ampiezza, intensità</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="fisica-7.2"><span class="n">7.2</span><div class="t"><b>Spettro della radiazione elettromagnetica</b><span>Onde radio, microonde, infrarosso, visibile, ultravioletto, raggi X, raggi gamma, per frequenza crescente e lunghezza d'onda decrescente</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="fisica-7.3"><span class="n">7.3</span><div class="t"><b>Quantizzazione dell'energia</b><span>Il fotone, relazione tra energia del fotone e frequenza</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="fisica-7.4"><span class="n">7.4</span><div class="t"><b>Assorbimento della radiazione elettromagnetica</b><span>Legge di Lambert-Beer</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="fisica-7.5"><span class="n">7.5</span><div class="t"><b>Radioattività e decadimenti radioattivi</b><span>Nucleo instabile, isotopi radioattivi, attività e legge del decadimento, emivita, decadimenti alfa, beta e gamma</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="fisica-7.6"><span class="n">7.6</span><div class="t"><b>Radiazioni ionizzanti e non ionizzanti</b><span>Criterio dell'energia di ionizzazione; non ionizzanti: onde radio, microonde, infrarosso; ionizzanti: raggi X, raggi gamma</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="fisica-7.7"><span class="n">7.7</span><div class="t"><b>Ottica</b><span>Riflessione e rifrazione, indice di rifrazione, legge dei punti coniugati per lenti convergenti sottili, formazione delle immagini</span></div><i></i><i></i><i></i></div>
+      <div class="cl-tail"><p class="kicker">Note</p><div class="notes"></div></div>
+    </div>
+  </div>
+  <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">04 / 12</span></div>
+</section>
+
+<section id="pr-p05" class="page" style="--c:var(--chimica)">
+  <div class="head"><p class="eyebrow"><b>Programma · Chimica</b> · syllabus ufficiale 2026</p></div>
+  <div class="content" style="gap:4mm">
+    <div class="cl-intro">
+      <div><p class="kicker" style="color:var(--c)">Programma ufficiale · syllabus 2026</p><h2>Chimica, argomento per argomento.</h2></div>
+      <div class="score" style="flex:none" data-score="chimica">Chiusi<span class="ln"></span>/ 46</div>
+    </div>
+    <p class="small">Il syllabus ufficiale 2026 di Chimica e propedeutica biochimica, voce per voce: 7 unità, 6 CFU, 46 argomenti. Alogenuri alchilici e isomerie stanno nei titoli delle unità 5 e 6 ma in nessuna voce: le isomerie le ritrovi in stereochimica (5.2) e nei carboidrati (7.3).</p>
+    <div class="cl">
+      <div class="cl-cols"><span></span><span>Argomento · cosa contiene</span><span>Capito</span><span>Fissato</span><span>Allenato</span></div>
+      <div class="cl-ud"><span class="n">UD1</span><b>La struttura dell'atomo, i legami chimici, stati di aggregazione della materia e termodinamica dei sistemi aperti</b><span class="cfu">1 CFU</span></div>
+      <div class="cl-arg" data-k="chimica-1.1"><span class="n">1.1</span><div class="t"><b>La costituzione della materia e la struttura dell'atomo</b><span>Teoria atomica, protoni, neutroni ed elettroni, numero atomico e numero di massa, isotopi, cenni sulle proprietà magnetiche del nucleo (Risonanza Magnetica Nucleare)</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-1.2"><span class="n">1.2</span><div class="t"><b>Numeri quantici, orbitali e configurazione elettronica</b><span>Numeri quantici, orbitali, principio di esclusione di Pauli, regola di Hund, configurazione elettronica degli elementi degli organismi viventi</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-1.3"><span class="n">1.3</span><div class="t"><b>Il sistema periodico degli elementi</b><span>Configurazione elettronica esterna, volume atomico, potenziale di ionizzazione, affinità elettronica, elettronegatività, regola dell'ottetto</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-1.4"><span class="n">1.4</span><div class="t"><b>Molecole, ioni, mole</b><span>Molecole, ioni e ioni poliatomici, massa molecolare, mole e numero di Avogadro, unità di massa atomica</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-1.5"><span class="n">1.5</span><div class="t"><b>Il legame chimico</b><span>Orbitale di legame, covalente omopolare, eteropolare e di coordinazione, cenni sul legame metallico, legame ionico, ibridazione sp, sp², sp³, orbitali sigma e pi greco, distanza ed energia di legame, angolo di legame e geometria molecolare, molecole polari e apolari</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-1.6"><span class="n">1.6</span><div class="t"><b>Interazioni deboli</b><span>Legame idrogeno, forze di van der Waals, interazioni idrofobiche</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-1.7"><span class="n">1.7</span><div class="t"><b>Numero di ossidazione e nomenclatura</b><span>Formule e nomi di composti binari e ternari con C, O, N, S, P: ossidi, idrossidi, perossidi, acidi, basi, sali</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-1.8"><span class="n">1.8</span><div class="t"><b>Lo stato solido (cenni)</b><span>Solidi ionici, molecolari, covalenti, metallici</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-1.9"><span class="n">1.9</span><div class="t"><b>Lo stato aeriforme</b><span>Temperatura assoluta, leggi di Boyle, Charles e Gay-Lussac, legge dei gas e respirazione, equazione di stato dei gas perfetti, cenni di teoria cinetica, legge di Maxwell-Boltzmann</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-1.10"><span class="n">1.10</span><div class="t"><b>Lo stato liquido</b><span>Ebollizione e calore di evaporazione, tensione superficiale, pressione di vapore, diagrammi di fase di acqua e anidride carbonica, evaporazione del sudore e termoregolazione</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-1.11"><span class="n">1.11</span><div class="t"><b>Principi di termodinamica e bioenergetica</b><span>Funzioni di stato, entalpia, trasformazioni esotermiche ed endotermiche, entropia, energia libera di Gibbs, trasformazioni esoergoniche ed endoergoniche, spontaneità ed equilibrio nei sistemi aperti</span></div><i></i><i></i><i></i></div>
+      <div class="cl-ud"><span class="n">UD2</span><b>Miscele, soluzioni e le proprietà colligative delle soluzioni</b><span class="cfu">1 CFU</span></div>
+      <div class="cl-arg" data-k="chimica-2.1"><span class="n">2.1</span><div class="t"><b>Miscele omogenee ed eterogenee di interesse biologico</b><span>Soluzioni, sospensioni, colloidi, aerosol</span></div><i></i><i></i><i></i></div>
+      
+    </div>
+  </div>
+  <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">05 / 12</span></div>
+</section>
+
+<section id="pr-p06" class="page" style="--c:var(--chimica)">
+  <div class="head"><p class="eyebrow"><b>Programma · Chimica</b> · segue</p></div>
+  <div class="content" style="gap:4mm">
+    
+    <div class="cl">
+      <div class="cl-cols"><span></span><span>Argomento · cosa contiene</span><span>Capito</span><span>Fissato</span><span>Allenato</span></div>
+      <div class="cl-ud"><span class="n">UD2</span><b>Miscele, soluzioni e le proprietà colligative delle soluzioni</b><span class="cfu">segue</span></div>
+      <div class="cl-arg" data-k="chimica-2.2"><span class="n">2.2</span><div class="t"><b>Soluzioni gassose, liquide e solide</b></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-2.3"><span class="n">2.3</span><div class="t"><b>L'acqua come solvente, solubilità ed elettroliti</b><span>Acqua come solvente polare, soluti ionici e non ionici, elettroliti e fluidi biologici, solubilità dei gas nei liquidi: legge di Henry</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-2.4"><span class="n">2.4</span><div class="t"><b>Unità di misura della concentrazione</b><span>Percentuali p/p, p/v, v/v, molarità, molalità, frazione molare, soluzioni non ideali e coefficiente di attività, equivalente</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-2.5"><span class="n">2.5</span><div class="t"><b>La concentrazione nelle miscele di gas</b><span>Legge di Dalton, composizione dell'aria, aria inspirata ed espirata</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-2.6"><span class="n">2.6</span><div class="t"><b>Proprietà colligative</b><span>Interazioni solvente-soluto, legge di Raoult, abbassamento della pressione di vapore, innalzamento della temperatura di ebollizione, abbassamento della temperatura di congelamento, pressione osmotica</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-2.7"><span class="n">2.7</span><div class="t"><b>Soluzioni elettrolitiche e osmosi</b><span>Fattore correttivo di van't Hoff, diffusione, osmosi, osmolarità e osmolalità, confronto tra proprietà osmotiche</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-2.8"><span class="n">2.8</span><div class="t"><b>Pressione osmotica nei liquidi biologici</b><span>Liquidi intra ed extracellulari, soluzioni isotoniche, ipertoniche e ipotoniche, soluzione fisiologica e glucosata, emolisi ed edema</span></div><i></i><i></i><i></i></div>
+      <div class="cl-ud"><span class="n">UD3</span><b>Le reazioni chimiche negli organismi viventi: caratteristiche generali, cinetica e equilibrio chimico</b><span class="cfu">0,5 CFU</span></div>
+      <div class="cl-arg" data-k="chimica-3.1"><span class="n">3.1</span><div class="t"><b>Definizioni delle reazioni chimiche</b><span>Conservazione di massa, energia e carica elettrica, bilanciamento</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-3.2"><span class="n">3.2</span><div class="t"><b>Cinetica di reazione</b><span>Reazioni a più stadi, fattori che influenzano la velocità, ordine e molecolarità, legge di Arrhenius e teoria degli urti efficaci, energia di attivazione, teoria dello stato di transizione</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-3.3"><span class="n">3.3</span><div class="t"><b>Catalizzatori</b><span>Definizione, cenni sugli enzimi</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-3.4"><span class="n">3.4</span><div class="t"><b>L'equilibrio chimico</b><span>Reazioni reversibili e irreversibili, costante di equilibrio e legge d'azione di massa, energia libera ed equilibrio</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-3.5"><span class="n">3.5</span><div class="t"><b>Equilibrio, stato stazionario, equilibri eterogenei</b><span>Equilibrio e stato stazionario, equilibrio mobile, quoziente di reazione, temperatura e costante di equilibrio, equilibri multipli, precipitazione di urati, prodotto di solubilità ed effetto dello ione in comune, calcoli renali</span></div><i></i><i></i><i></i></div>
+      <div class="cl-ud"><span class="n">UD4</span><b>Acidi, basi, sali, pH, soluzioni tampone; reazioni di ossido-riduzione ed elettrochimica</b><span class="cfu">1 CFU</span></div>
+      <div class="cl-arg" data-k="chimica-4.1"><span class="n">4.1</span><div class="t"><b>Acidi, basi, pH e sali</b><span>Teorie di Arrhenius, Brønsted-Lowry e Lewis, autoprotolisi e Kw, pH e pOH, Ka e Kb, acidi e basi forti e deboli, pKa e pKb, indicatori, calcolo del pH, acidi e basi poliprotici, reazioni acido-base, sali in acqua, solubilità e pH: ossalato di calcio, fosfato di calcio, urato di sodio</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-4.2"><span class="n">4.2</span><div class="t"><b>Soluzioni tampone</b><span>Tamponi di acidi e basi deboli, equazione di Henderson-Hasselbalch, efficienza di un tampone</span></div><i></i><i></i><i></i></div>
+      
+    </div>
+  </div>
+  <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">06 / 12</span></div>
+</section>
+
+<section id="pr-p07" class="page" style="--c:var(--chimica)">
+  <div class="head"><p class="eyebrow"><b>Programma · Chimica</b> · segue</p></div>
+  <div class="content" style="gap:4mm">
+    
+    <div class="cl">
+      <div class="cl-cols"><span></span><span>Argomento · cosa contiene</span><span>Capito</span><span>Fissato</span><span>Allenato</span></div>
+      <div class="cl-ud"><span class="n">UD4</span><b>Acidi, basi, sali, pH, soluzioni tampone; reazioni di ossido-riduzione ed elettrochimica</b><span class="cfu">segue</span></div>
+      <div class="cl-arg" data-k="chimica-4.3"><span class="n">4.3</span><div class="t"><b>L'equilibrio acido-base nei fluidi biologici</b><span>pH e tamponi del sangue, acido carbonico/bicarbonato, diidrogenofosfato/idrogenofosfato, proteine come tamponi, acidosi e alcalosi</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-4.4"><span class="n">4.4</span><div class="t"><b>Reazioni di ossido-riduzione ed elettrochimica</b><span>Reazioni redox, cella galvanica, anodo e catodo, semireazioni e potenziali standard, equazione di Nernst, energia libera e differenza di potenziale, lavoro chimico, redox biologiche, ossigeno come accettore di elettroni, reazioni di Fenton e Haber-Weiss</span></div><i></i><i></i><i></i></div>
+      <div class="cl-ud"><span class="n">UD5</span><b>Proprietà del carbonio e reattività dei composti organici, idrocarburi, alogenuri alchilici, idrocarburi aromatici e derivati</b><span class="cfu">0,5 CFU</span></div>
+      <div class="cl-arg" data-k="chimica-5.1"><span class="n">5.1</span><div class="t"><b>Il carbonio e gli idrocarburi</b><span>Ibridazione del carbonio, rappresentazione dei composti, idrocarburi saturi e insaturi, ciclici ed eterociclici, nomenclatura IUPAC</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-5.2"><span class="n">5.2</span><div class="t"><b>Stereochimica</b><span>Diastereoisomeri, enantiomeri, epimeri, miscele racemiche, regole di priorità e convenzione R/S, potere ottico rotatorio, destrogiro e levogiro, convenzione di Fischer</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-5.3"><span class="n">5.3</span><div class="t"><b>Rottura omolitica</b><span>Rottura omolitica del legame, reazioni radicaliche</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-5.4"><span class="n">5.4</span><div class="t"><b>Rottura eterolitica e reattività</b><span>Carbocationi e carboanioni, effetto induttivo, delocalizzazione, nucleofili ed elettrofili, sostituzione nucleofila SN1 e SN2, eliminazione</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-5.5"><span class="n">5.5</span><div class="t"><b>Alcani e cicloalcani</b><span>Struttura, nomenclatura, proprietà e rilevanza biomedica, tensione nei cicloalcani, ossidazione</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-5.6"><span class="n">5.6</span><div class="t"><b>Alcheni</b><span>Struttura, nomenclatura, proprietà e rilevanza biomedica, dieni coniugati, addizione elettrofila</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-5.7"><span class="n">5.7</span><div class="t"><b>Idrocarburi aromatici</b><span>Benzene, eterocicli (pirimidine) e policiclici (purine), regola di Hückel, sostituzione elettrofila aromatica, sostituenti attivanti e disattivanti, tossicità</span></div><i></i><i></i><i></i></div>
+      <div class="cl-ud"><span class="n">UD6</span><b>I gruppi funzionali e isomerie: alcoli, fenoli, eteri, tioli e tioeteri; aldeidi e chetoni; acidi carbossilici e derivati, ammine e ammidi</b><span class="cfu">1 CFU</span></div>
+      <div class="cl-arg" data-k="chimica-6.1"><span class="n">6.1</span><div class="t"><b>Alcoli, tioli, fenoli, eteri, tioeteri, epossidi</b><span>Struttura e proprietà, disidratazione, ossidazione, sostituzione nucleofila, etanolo, acidità del fenolo, alcoli e tioli di rilevanza biologica</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-6.2"><span class="n">6.2</span><div class="t"><b>Ammine</b><span>Struttura e proprietà, basicità e nucleofilicità, alchilazione, formazione di sali, nitrosammine, colina</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-6.3"><span class="n">6.3</span><div class="t"><b>Aldeidi e chetoni</b><span>Ossidazione, riduzione, addizione nucleofila, condensazione aldolica, emiacetali e acetali, immine (basi di Schiff), idrogeno in alfa, tautomeria cheto-enolica (urato, citosina, fosfoenolpiruvato), chinoni e ubichinone</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-6.4"><span class="n">6.4</span><div class="t"><b>Acidi carbossilici e derivati</b><span>Anidridi, esteri, tioesteri, ammidi, acilfosfati, acidità, salificazione, decarbossilazione, sostituzione nucleofila acilica, esterificazione di Fischer, idrolisi e transesterificazione, condensazione di Claisen, lattoni, chetoacidi, idrolisi delle ammidi</span></div><i></i><i></i><i></i></div>
+      
+    </div>
+  </div>
+  <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">07 / 12</span></div>
+</section>
+
+<section id="pr-p08" class="page" style="--c:var(--chimica)">
+  <div class="head"><p class="eyebrow"><b>Programma · Chimica</b> · segue</p></div>
+  <div class="content" style="gap:4mm">
+    
+    <div class="cl">
+      <div class="cl-cols"><span></span><span>Argomento · cosa contiene</span><span>Capito</span><span>Fissato</span><span>Allenato</span></div>
+      <div class="cl-ud"><span class="n">UD7</span><b>Amminoacidi e proteine, carboidrati, lipidi, nucleotidi, polinucleotidi e acidi nucleici</b><span class="cfu">1 CFU</span></div>
+      <div class="cl-arg" data-k="chimica-7.1"><span class="n">7.1</span><div class="t"><b>Amminoacidi</b><span>Struttura e sigle, classificazione per catena laterale, stereochimica e convenzione di Fischer, proprietà acido-base e punto isoelettrico, essenziali e non essenziali</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-7.2"><span class="n">7.2</span><div class="t"><b>Legame peptidico e proteine</b><span>Formazione e caratteristiche del legame peptidico, struttura primaria, secondaria, terziaria e quaternaria, interazioni deboli e ponti disolfuro</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-7.3"><span class="n">7.3</span><div class="t"><b>Carboidrati</b><span>Stereochimica, isomeri, epimeri, anomeri e tautomeri, ciclizzazione, mutarotazione, ossidazione, riduzione, reazione di Maillard e prodotti di Amadori, legame glicosidico, disaccaridi, oligosaccaridi, amminozuccheri, amido, cellulosa, glicogeno, glicosamminoglicani</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-7.4"><span class="n">7.4</span><div class="t"><b>Lipidi</b><span>Acidi grassi saturi e insaturi, trigliceridi, glicerofosfolipidi, sfingolipidi, glicolipidi, colesterolo e derivati: ormoni steroidei, acidi biliari, vitamina D</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-7.5"><span class="n">7.5</span><div class="t"><b>Basi azotate, nucleosidi e nucleotidi</b><span>Struttura e nomenclatura, ATP, NAD⁺/NADH e FAD/FADH₂</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-7.6"><span class="n">7.6</span><div class="t"><b>Acidi nucleici</b><span>Legame fosfodiestere, struttura di DNA e RNA</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="chimica-7.7"><span class="n">7.7</span><div class="t"><b>Modificazioni non enzimatiche delle macromolecole</b><span>Deaminazione della citosina, radicale idrossilico su lipidi, proteine e DNA, antiossidanti non enzimatici: glutatione, tocoferolo, carotenoidi</span></div><i></i><i></i><i></i></div>
+      <div class="cl-tail"><p class="kicker">Note</p><div class="notes"></div></div>
+    </div>
+  </div>
+  <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">08 / 12</span></div>
+</section>
+
+<section id="pr-p09" class="page" style="--c:var(--biologia)">
+  <div class="head"><p class="eyebrow"><b>Programma · Biologia</b> · syllabus ufficiale 2026</p></div>
+  <div class="content" style="gap:4mm">
+    <div class="cl-intro">
+      <div><p class="kicker" style="color:var(--c)">Programma ufficiale · syllabus 2026</p><h2>Biologia, argomento per argomento.</h2></div>
+      <div class="score" style="flex:none" data-score="biologia">Chiusi<span class="ln"></span>/ 41</div>
+    </div>
+    <p class="small">Il syllabus ufficiale 2026 di Biologia, voce per voce: 7 unità, 6 CFU, 41 argomenti. L'unità 5, le strutture cellulari, vale da sola 1,75 CFU: quasi un terzo del programma.</p>
+    <div class="cl">
+      <div class="cl-cols"><span></span><span>Argomento · cosa contiene</span><span>Capito</span><span>Fissato</span><span>Allenato</span></div>
+      <div class="cl-ud"><span class="n">UD1</span><b>Le basi dell'organizzazione biologica e molecolare della vita</b><span class="cfu">0,5 CFU</span></div>
+      <div class="cl-arg" data-k="biologia-1.1"><span class="n">1.1</span><div class="t"><b>L'albero della vita</b><span>Organismi e teoria cellulare, proprietà fondamentali della materia vivente</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="biologia-1.2"><span class="n">1.2</span><div class="t"><b>I virus</b><span>Acido nucleico, capside e involucro, classi di virus animali, ciclo litico e lisogenico, ciclo di un virus animale e di un retrovirus, entrata e uscita dalla cellula</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="biologia-1.3"><span class="n">1.3</span><div class="t"><b>La cellula procariotica</b><span>Membrana, parete, membrana esterna, capsula, fimbrie e pili, flagelli, Gram positivi e Gram negativi, eubatteri e archeobatteri, trasformazione, coniugazione, trasduzione</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="biologia-1.4"><span class="n">1.4</span><div class="t"><b>La cellula eucariotica</b><span>Sistema delle endomembrane, origine del nucleo, endosimbiosi e mitocondri, dagli unicellulari ai pluricellulari</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="biologia-1.5"><span class="n">1.5</span><div class="t"><b>Struttura e funzione delle macromolecole biologiche</b><span>Carboidrati, lipidi, proteine con domini e siti attivi, enzimi (chinasi-fosfatasi, ubiquitinasi-deubiquitinasi, acetilasi-deacetilasi), modificazioni post-traduzionali, acidi nucleici, doppia elica di Watson e Crick, RNA codificanti e non codificanti, anabolismo e catabolismo</span></div><i></i><i></i><i></i></div>
+      <div class="cl-ud"><span class="n">UD2</span><b>I meccanismi cellulari di trasmissione e controllo dell'informazione genetica e epigenetica</b><span class="cfu">0,5 CFU</span></div>
+      <div class="cl-arg" data-k="biologia-2.1"><span class="n">2.1</span><div class="t"><b>Il genoma delle cellule eucariotiche</b><span>Cromosomi lineari, organizzazione minima di un cromosoma, DNA centromerico e telomerico</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="biologia-2.2"><span class="n">2.2</span><div class="t"><b>La cromatina</b><span>Nucleosomi, istoni, istone H1 e fibra da 30 nm, eucromatina ed eterocromatina, metilazione del DNA, rimodellamento, modificazioni degli istoni ed epigenetica, condensine</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="biologia-2.3"><span class="n">2.3</span><div class="t"><b>Il genoma umano</b><span>Sequenze singole, famiglie geniche (globine, RNA ribosomiali), ripetute in tandem (mini e microsatelliti), intersperse (LINE, SINE, retrovirus endogeni), elementi mobili</span></div><i></i><i></i><i></i></div>
+      <div class="cl-ud"><span class="n">UD3</span><b>Il flusso dell'informazione</b><span class="cfu">1,0 CFU</span></div>
+      <div class="cl-arg" data-k="biologia-3.1"><span class="n">3.1</span><div class="t"><b>La replicazione del DNA nei procarioti e negli eucarioti</b><span>Meccanismo semiconservativo, origini e forcella, elicasi e topoisomerasi, primasi, DNA polimerasi e correzione degli errori, frammenti di Okazaki, DNA ligasi, telomeri e telomerasi, senescenza replicativa</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="biologia-3.2"><span class="n">3.2</span><div class="t"><b>I geni</b><span>Anatomia del gene procariotico ed eucariotico, geni policistronici e monocistronici, promotori ed elementi regolativi in cis</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="biologia-3.3"><span class="n">3.3</span><div class="t"><b>La trascrizione nei procarioti</b><span>Regolazione con il modello dell'operone Lac</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="biologia-3.4"><span class="n">3.4</span><div class="t"><b>Il controllo dell'espressione genica negli eucarioti</b><span>Controllo trascrizionale, post-trascrizionale, traduzionale, post-traduzionale</span></div><i></i><i></i><i></i></div>
+      
+    </div>
+  </div>
+  <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">09 / 12</span></div>
+</section>
+
+<section id="pr-p10" class="page" style="--c:var(--biologia)">
+  <div class="head"><p class="eyebrow"><b>Programma · Biologia</b> · segue</p></div>
+  <div class="content" style="gap:4mm">
+    
+    <div class="cl">
+      <div class="cl-cols"><span></span><span>Argomento · cosa contiene</span><span>Capito</span><span>Fissato</span><span>Allenato</span></div>
+      <div class="cl-ud"><span class="n">UD3</span><b>Il flusso dell'informazione</b><span class="cfu">segue</span></div>
+      <div class="cl-arg" data-k="biologia-3.5"><span class="n">3.5</span><div class="t"><b>La trascrizione negli eucarioti</b><span>RNA polimerasi I, II e III, fattori generali, TATA box, promotori prossimali e distali (enhancer, silencer), recettori degli ormoni steroidei, inizio, allungamento e terminazione</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="biologia-3.6"><span class="n">3.6</span><div class="t"><b>La maturazione degli RNA</b><span>Capping, poliadenilazione, splicing e splicing alternativo, spliceosoma e snRNA, ribozimi, editing, stabilità dell'mRNA (miRNA, RNA interference), maturazione di rRNA e tRNA</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="biologia-3.7"><span class="n">3.7</span><div class="t"><b>La sintesi delle proteine</b><span>rRNA, tRNA e mRNA, aminoacil-tRNA, ribosomi, codice genetico, codoni e anticodoni, proprietà del codice, regioni non tradotte, fattori di inizio, allungamento e terminazione</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="biologia-3.8"><span class="n">3.8</span><div class="t"><b>La maturazione delle proteine</b><span>Ripiegamento corretto, proteine chaperon, errori di ripiegamento</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="biologia-3.9"><span class="n">3.9</span><div class="t"><b>La regolazione dell'attività biologica delle proteine</b><span>Degradazione proteasomica ubiquitina-dipendente, proteine simili all'ubiquitina</span></div><i></i><i></i><i></i></div>
+      <div class="cl-ud"><span class="n">UD4</span><b>I meccanismi cellulari di trasmissione e controllo dei caratteri selvatici e mutati</b><span class="cfu">0,75 CFU</span></div>
+      <div class="cl-arg" data-k="biologia-4.1"><span class="n">4.1</span><div class="t"><b>Le variazioni del genoma</b><span>Sostituzioni, inserzioni e delezioni, mutazioni geniche e cromosomiche, espansione di sequenze ripetute, riparazione del danno al DNA</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="biologia-4.2"><span class="n">4.2</span><div class="t"><b>Gli alleli</b><span>Omozigosi ed eterozigosi, dominanza e recessività, genotipo e fenotipo, leggi di Mendel, dominanza incompleta e codominanza, alleli multipli (AB0), pleiotropia, epistasi, associazione, mappe fisiche e genetiche</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="biologia-4.3"><span class="n">4.3</span><div class="t"><b>L'espressione genica modulata dall'ambiente</b><span>Penetranza ed espressività, caratteri poligenici ed eredità quantitativa, imprinting genomico</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="biologia-4.4"><span class="n">4.4</span><div class="t"><b>Cromosomi umani e cariotipo</b><span>Diploidia e omologhi, bandeggio, aneuploidia e poliploidia, traslocazioni, inversioni, delezioni e inserzioni, trisomia 21</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="biologia-4.5"><span class="n">4.5</span><div class="t"><b>Gli alberi genealogici</b><span>Ereditarietà autosomica, legata alla X (dominante e recessiva), legata alla Y, mitocondriale</span></div><i></i><i></i><i></i></div>
+      <div class="cl-ud"><span class="n">UD5</span><b>Le strutture cellulari: biogenesi, morfologia e funzioni</b><span class="cfu">1,75 CFU</span></div>
+      <div class="cl-arg" data-k="biologia-5.1"><span class="n">5.1</span><div class="t"><b>Le membrane e i loro componenti</b><span>Modello a mosaico fluido, glicocalice, asimmetria di membrana</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="biologia-5.2"><span class="n">5.2</span><div class="t"><b>Il trasporto attraverso la membrana plasmatica</b><span>Osmosi, diffusione, trasporto passivo, canali e trasportatori, trasporto attivo, pompe ATPasi e trasportatori ABC, potenziale di membrana e d'azione</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="biologia-5.3"><span class="n">5.3</span><div class="t"><b>Lo smistamento delle proteine</b><span>Compartimenti cellulari e relazioni topologiche, segnali di indirizzamento</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="biologia-5.4"><span class="n">5.4</span><div class="t"><b>Il nucleo</b><span>Involucro, nucleolo, pori e nucleoporine, segnali di localizzazione e di esportazione, importine, esportine, Ran, RanGEF e RanGAP, regolazione dell'importazione (NF-κB, SREBP1), trasporto degli RNA</span></div><i></i><i></i><i></i></div>
+      
+    </div>
+  </div>
+  <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">10 / 12</span></div>
+</section>
+
+<section id="pr-p11" class="page" style="--c:var(--biologia)">
+  <div class="head"><p class="eyebrow"><b>Programma · Biologia</b> · segue</p></div>
+  <div class="content" style="gap:4mm">
+    
+    <div class="cl">
+      <div class="cl-cols"><span></span><span>Argomento · cosa contiene</span><span>Capito</span><span>Fissato</span><span>Allenato</span></div>
+      <div class="cl-ud"><span class="n">UD5</span><b>Le strutture cellulari: biogenesi, morfologia e funzioni</b><span class="cfu">segue</span></div>
+      <div class="cl-arg" data-k="biologia-5.5"><span class="n">5.5</span><div class="t"><b>I mitocondri</b><span>Struttura e funzioni, genoma mitocondriale, glicolisi, ciclo degli acidi tricarbossilici, catena di trasporto degli elettroni, sintesi di ATP e bilancio energetico, fusione e fissione, traslocatori TOM, TIM, SAM e OXA</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="biologia-5.6"><span class="n">5.6</span><div class="t"><b>I perossisomi</b><span>Funzioni, trasporto ai perossisomi, perossine e biogenesi, sindrome di Zellweger</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="biologia-5.7"><span class="n">5.7</span><div class="t"><b>La via secretoria</b><span>Reticolo endoplasmatico liscio e ruvido, Golgi, SRP e traslocone, peptidasi del segnale, glicosilazione, calnexina e calreticulina, controllo di qualità, UPR ed ERAD, fibrosi cistica, secrezione costitutiva e regolata</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="biologia-5.8"><span class="n">5.8</span><div class="t"><b>Il traffico vescicolare</b><span>Formazione delle vescicole, proteine di rivestimento, attracco e fusione, NSF, SNAPs, SNARE e RAB, fosfoinositidi</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="biologia-5.9"><span class="n">5.9</span><div class="t"><b>L'endocitosi</b><span>In fase fluida e mediata da recettori (transferrina, LDL, EGF), endosomi, corpi multivescicolari, lisosomi e mannosio-6-fosfato, malattie da accumulo, cellule polarizzate, transcitosi, fagocitosi</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="biologia-5.10"><span class="n">5.10</span><div class="t"><b>L'autofagia</b><span>Macroautofagia, microautofagia, autofagia mediata da chaperon, mitofagia, alterazioni della via</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="biologia-5.11"><span class="n">5.11</span><div class="t"><b>Il citoscheletro</b><span>Microtubuli (GTP, centrosoma e γTuRC, MAP, dineine e chinesine, ciglia e flagelli), microfilamenti di actina (Arp2/3, miosine, distrofina e sarcomero, Rho, Rac e CDC42, migrazione dei neutrofili), filamenti intermedi (cheratine, lamina nucleare), connessioni con il nucleoscheletro</span></div><i></i><i></i><i></i></div>
+      <div class="cl-ud"><span class="n">UD6</span><b>La cellula e l'ambiente, la segnalazione cellulare e la trasduzione del segnale</b><span class="cfu">0,75 CFU</span></div>
+      <div class="cl-arg" data-k="biologia-6.1"><span class="n">6.1</span><div class="t"><b>La matrice extracellulare</b><span>Struttura e funzioni, degradazione, integrine, meccanotrasduzione, fibronectina</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="biologia-6.2"><span class="n">6.2</span><div class="t"><b>La comunicazione tra cellule</b><span>Caderine e CAM, giunzioni occludenti, aderenti, desmosomi ed emidesmosomi, giunzioni comunicanti</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="biologia-6.3"><span class="n">6.3</span><div class="t"><b>La segnalazione cellulare e la trasduzione del segnale</b><span>Segnalazione da contatto, autocrina, paracrina, endocrina e sinaptica, recettori di membrana e intracellulari, ossido nitrico, recettori canale, recettori accoppiati a proteine G, GEF e GAP, secondi messaggeri, desensitizzazione (visione), recettori tirosin-chinasici e via Ras-MAP chinasi, oncogeni, recettori di insulina ed EGF, fosfoinositidi</span></div><i></i><i></i><i></i></div>
+      <div class="cl-ud"><span class="n">UD7</span><b>Il controllo della proliferazione e della sopravvivenza cellulare</b><span class="cfu">0,75 CFU</span></div>
+      <div class="cl-arg" data-k="biologia-7.1"><span class="n">7.1</span><div class="t"><b>Il ciclo cellulare</b><span>Fasi e punti di controllo, cicline e chinasi dipendenti da ciclina</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="biologia-7.2"><span class="n">7.2</span><div class="t"><b>Il punto di restrizione e l'entrata in fase S</b><span>Fattori di crescita, ciclina D-Cdk4/6, Rb ed E2F, inibitori ciclina-CDK, p53 e danno al DNA, proto-oncogeni, oncogeni e oncosoppressori, virus oncogeni</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="biologia-7.3"><span class="n">7.3</span><div class="t"><b>La mitosi</b><span>Fasi, condensazione dei cromosomi, fuso mitotico, lamina nucleare, complesso NDC80, APC/C, degradazione di cicline e securina, separazione dei cromatidi, citodieresi, mitosi asimmetrica</span></div><i></i><i></i><i></i></div>
+      
+    </div>
+  </div>
+  <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">11 / 12</span></div>
+</section>
+
+<section id="pr-p12" class="page" style="--c:var(--biologia)">
+  <div class="head"><p class="eyebrow"><b>Programma · Biologia</b> · segue</p></div>
+  <div class="content" style="gap:4mm">
+    
+    <div class="cl">
+      <div class="cl-cols"><span></span><span>Argomento · cosa contiene</span><span>Capito</span><span>Fissato</span><span>Allenato</span></div>
+      <div class="cl-ud"><span class="n">UD7</span><b>Il controllo della proliferazione e della sopravvivenza cellulare</b><span class="cfu">segue</span></div>
+      <div class="cl-arg" data-k="biologia-7.4"><span class="n">7.4</span><div class="t"><b>La meiosi</b><span>Meccanismo e conseguenze genetiche, crossing over, differenze con la mitosi, cause di aneuploidia, gametogenesi maschile e femminile, cellula staminale</span></div><i></i><i></i><i></i></div>
+      <div class="cl-arg" data-k="biologia-7.5"><span class="n">7.5</span><div class="t"><b>La morte cellulare</b><span>Necrosi e apoptosi, via intrinseca ed estrinseca, caspasi, MOMP, citocromo c e apoptosoma, famiglia BCL2, recettori di morte</span></div><i></i><i></i><i></i></div>
+      <div class="cl-tail"><p class="kicker">Note</p><div class="notes"></div></div>
+    </div>
+  </div>
+  <div class="foot"><span class="brand"><svg><use href="#pdfm"/></svg>PORTALE DEI FUTURI MEDICI</span><span class="num">12 / 12</span></div>
+</section>
+</main>
+
+<script>
+// Righe per scrivere come elementi veri: data-n fissa il numero, altrimenti riempiono lo spazio del riquadro.
+function drawLines() {
+  const mm = document.createElement('div');
+  mm.style.cssText = 'position:absolute;height:7.8mm;visibility:hidden';
+  document.body.appendChild(mm);
+  const step = mm.getBoundingClientRect().height;
+  mm.remove();
+  document.querySelectorAll('.lines, .notes').forEach(el => {
+    el.innerHTML = '';
+    const n = el.dataset.n ? +el.dataset.n : Math.floor(el.getBoundingClientRect().height / step);
+    for (let k = 0; k < n; k++) el.appendChild(document.createElement('i'));
+  });
+}
+function fit() {
+  const root = document.documentElement.style;
+  root.setProperty('--z', 1);
+  const w = document.querySelector('.page').offsetWidth;
+  const avail = document.querySelector('.pages').clientWidth;
+  root.setProperty('--z', Math.min(1, avail / w).toFixed(4));
+}
+function render() { document.documentElement.style.setProperty('--z', 1); drawLines(); fit(); }
+fit();
+document.fonts.ready.then(() => { render(); linkPages(); interactive(); });
+addEventListener('resize', fit);
+// Compilazione a schermo: caselle, scelte e righe diventano campi veri. Le risposte restano nel browser
+// di chi compila (localStorage): gli studenti aprono il link pubblico, spesso senza account Claude.
+const STORE_KEY = 'pdfm-quaderno-v1';
+const COLS = ['capito', 'fissato', 'allenato'];
+let state = {};
+try { state = JSON.parse(localStorage.getItem(STORE_KEY) || '{}') || {}; } catch (e) { state = {}; }
+let saveTimer = null;
+function persist() {
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(() => { try { localStorage.setItem(STORE_KEY, JSON.stringify(state)); } catch (e) {} }, 300);
+}
+function onKey(el, fn) {
+  el.addEventListener('click', fn);
+  el.addEventListener('keydown', e => { if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); fn(); } });
+}
+function makeCheck(el, key, label) {
+  el.setAttribute('role', 'checkbox');
+  el.tabIndex = 0;
+  if (label) el.setAttribute('aria-label', label);
+  el.dataset.key = key;
+  onKey(el, () => { if (state[key]) delete state[key]; else state[key] = 1; paintAll(); persist(); });
+}
+function makeRadios(items, key, label) {
+  items[0].parentElement.setAttribute('role', 'radiogroup');
+  items[0].parentElement.setAttribute('aria-label', label);
+  items.forEach((it, i) => {
+    it.setAttribute('role', 'radio');
+    it.tabIndex = 0;
+    it.dataset.key = key;
+    it.dataset.val = i;
+    onKey(it, () => { if (state[key] === i) delete state[key]; else state[key] = i; paintAll(); persist(); });
+  });
+}
+function bindText(field, key, label) {
+  field.dataset.key = key;
+  field.setAttribute('aria-label', label || 'Risposta');
+  field.spellcheck = false;
+  field.addEventListener('input', () => { if (field.value) state[key] = field.value; else delete state[key]; persist(); });
+}
+function lineInput(span, key) {
+  const inp = document.createElement('input');
+  inp.type = 'text';
+  inp.className = 'ln in-line';
+  inp.setAttribute('style', span.getAttribute('style') || '');
+  const lbl = span.parentElement.querySelector('.lbl');
+  span.replaceWith(inp);
+  bindText(inp, key, lbl ? lbl.textContent.trim() : 'Risposta');
+  return inp;
+}
+function paintAll() {
+  document.querySelectorAll('[role="checkbox"][data-key]').forEach(el => {
+    const on = !!state[el.dataset.key];
+    el.classList.toggle('on', on);
+    el.setAttribute('aria-checked', on);
+  });
+  document.querySelectorAll('[role="radio"][data-key]').forEach(el => {
+    const on = state[el.dataset.key] === +el.dataset.val;
+    el.classList.toggle('on', on);
+    el.setAttribute('aria-checked', on);
+  });
+  document.querySelectorAll('input[data-key], textarea[data-key]').forEach(f => { f.value = state[f.dataset.key] || ''; });
+  const counts = {};
+  let total = 0, all = 0;
+  document.querySelectorAll('.cl-arg[data-k]').forEach(row => {
+    const subj = row.dataset.k.split('-')[0];
+    const done = COLS.every(c => state['pr-' + row.dataset.k + '-' + c]);
+    row.classList.toggle('done', done);
+    counts[subj] = (counts[subj] || 0) + (done ? 1 : 0);
+    total += done ? 1 : 0;
+    all += 1;
+  });
+  document.querySelectorAll('[data-score]').forEach(el => { const ln = el.querySelector('.ln'); if (ln) ln.textContent = counts[el.dataset.score] || 0; });
+  const t = document.getElementById('prog-total');
+  if (t) t.textContent = total + '/' + all;
+}
+function linkPages() {
+  // «pagina 10», «Pagine 3, 4 e 5», «pag. 11»: ogni numero porta alla sua pagina dello Studybook
+  const re = /(Pagine|Pagina|pagine|pagina|pag\.)\s+\d+(?:\s*,\s*\d+)*(?:\s+e\s+\d+)?/g;
+  const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  document.querySelectorAll('.page[id^="sb-"]').forEach(page => {
+    const walker = document.createTreeWalker(page, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach(node => {
+      re.lastIndex = 0;
+      if (!re.test(node.nodeValue)) return;
+      const html = esc(node.nodeValue).replace(re, m => m.replace(/\d+/g, d =>
+        document.getElementById('sb-p' + d.padStart(2, '0')) ? '<a class="pref" href="#sb-p' + d.padStart(2, '0') + '">' + d + '</a>' : d));
+      const tmp = document.createElement('span');
+      tmp.innerHTML = html;
+      node.replaceWith(...tmp.childNodes);
+    });
+  });
+}
+function interactive() {
+  document.querySelectorAll('.page[id]').forEach(page => {
+    let n = 0;
+    const key = t => page.id + '-' + t + (n++);
+    page.querySelectorAll('.check').forEach(el => makeCheck(el, key('c'), el.textContent.trim()));
+    page.querySelectorAll('.fill .ln, .owner .ln').forEach(span => lineInput(span, key('t')));
+    page.querySelectorAll('.score:not([data-score]) .ln').forEach(span => { const inp = lineInput(span, key('t')); inp.inputMode = 'numeric'; inp.setAttribute('aria-label', 'Parole ritrovate su 14'); });
+    page.querySelectorAll('.lines, .notes').forEach(box => {
+      const ta = document.createElement('textarea');
+      ta.className = 'in-area';
+      box.appendChild(ta);
+      const q = box.closest('.q, .box, .cl-tail');
+      const h = q && q.querySelector('p, h3, .kicker');
+      bindText(ta, key('a'), h ? h.textContent.trim() : 'Appunti');
+    });
+    page.querySelectorAll('.slot').forEach(slot => {
+      const inp = document.createElement('input');
+      inp.type = 'text';
+      inp.className = 'in-slot';
+      slot.appendChild(inp);
+      bindText(inp, key('s'), 'Parola ' + slot.dataset.n);
+    });
+    page.querySelectorAll('.plan.collect td:not(.w)').forEach(td => {
+      const ta = document.createElement('textarea');
+      ta.className = 'in-cell';
+      td.appendChild(ta);
+      const row = td.parentElement.querySelector('td.w b');
+      const col = td.closest('table').querySelectorAll('th')[td.cellIndex];
+      bindText(ta, key('p'), (row ? row.textContent : '') + ' · ' + (col ? col.textContent : ''));
+    });
+    const prob = page.querySelector('.prob');
+    if (prob) makeRadios([...prob.children], key('r'), 'Il problema in cui ti riconosci di più');
+    const opts = page.querySelector('.opts');
+    if (opts) makeRadios([...opts.children], key('r'), 'La tua risposta');
+  });
+  document.querySelectorAll('.cl-arg[data-k]').forEach(row => {
+    const what = row.querySelector('.n').textContent + ' ' + row.querySelector('.t b').textContent;
+    row.querySelectorAll('i').forEach((box, j) => makeCheck(box, 'pr-' + row.dataset.k + '-' + COLS[j], COLS[j] + ': ' + what));
+  });
+  paintAll();
+}
+const resetBtn = document.getElementById('reset');
+let resetArmed = null;
+resetBtn.addEventListener('click', () => {
+  if (!resetArmed) {
+    resetBtn.textContent = 'Sicuro? Premi di nuovo per cancellare tutto';
+    resetArmed = setTimeout(() => { resetArmed = null; resetBtn.textContent = 'Cancella le mie risposte'; }, 4000);
+    return;
+  }
+  clearTimeout(resetArmed);
+  resetArmed = null;
+  state = {};
+  try { localStorage.removeItem(STORE_KEY); } catch (e) {}
+  paintAll();
+  resetBtn.textContent = 'Risposte cancellate';
+  setTimeout(() => { resetBtn.textContent = 'Cancella le mie risposte'; }, 2500);
+});
+
+</script>
+
+</body>
+</html>
